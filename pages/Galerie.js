@@ -1,9 +1,13 @@
 
 
 import React from 'react'
+import Slider from '../components/slideshow/Slider'
+
 
 export default function Galerie() {
   return (
-	 <div>Galerie</div>
+	 <div>
+     <Slider/>
+   </div>
   )
 }

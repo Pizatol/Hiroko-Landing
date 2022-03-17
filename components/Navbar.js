@@ -29,7 +29,7 @@ export default function Navbar( {children} ) {
                 <Link href="/">
                     <a className={css.lien}>Tarifs</a>
                 </Link>
-                <Link href="/">
+                <Link href="/Galerie">
                     <a className={css.lien}>Galerie</a>
                 </Link>
                 <Link href="/">

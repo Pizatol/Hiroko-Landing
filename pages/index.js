@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/dist/client/link";
 import css from "../styles/Home.module.css";
 
-import hiroko from "../public/assets/hiroko.png";
+import hiroko from "../public/assets/hiro.jpg";
 
 export default function Home() {
     return (
@@ -22,13 +22,15 @@ export default function Home() {
                     <div className={css.mainLeftPart}>
                         <Image
                             src={hiroko}
-                            width={400}
-                            height={400}
+                            width={500}
+                            height={500}
+                            
                             alt="image profil Hiroko"
                         />
                     </div>
 
                     <div className={css.mainRightPart}>
+                    
                         <h2>Hello</h2>
                         <div>
 

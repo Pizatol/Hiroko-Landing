@@ -23,8 +23,11 @@ a {
 /* COULEURS  */
   --gris-clair : #EBEBEB;
   --gris: #C0C0C0;
-  --bleu-clair: #3A6EA5;
-  --bleu : #004E98;
+  /* --bleu-clair: #3A6EA5; */
+  --bleu-clair: #2979ff;
+
+  --bleu : #2962ff;
+  /* --bleu : #004E98; */
   --orange : #FF6700;  
   --black : #333;
 

@@ -10,8 +10,9 @@
 	height: 80px;
 	padding: 0 80px;
 	background-color: transparent;
-	border: 1px solid red;
+
 }
+
 
 .left {
 	font-size: 35px;
@@ -28,18 +29,22 @@
 
 }
 
+
+
 .right a {
 	margin: 0 10px;
 	color: var(--black);
 	font-size: 25px;
-	font-family: var(--text);
+	font-family: var(--text);	
+	padding-right: 10px;
+	border: 1px solid transparent ;
+	border-radius: 10px;
+	padding: 10px 10px;
+	transition: all .4s ease;
 	
 }
 
-.right a {
-	border-right: 1px solid var(--black);
-	padding-right: 10px;
-}
-.right a:nth-child(4){
-	border-right: 1px solid transparent;
+
+.right a:hover {
+	background-color: var(--gris);
 }
