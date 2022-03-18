@@ -17,7 +17,7 @@ export default function Navbar( {children} ) {
 				<div className={css.logo}>
 				
 				</div>
-                <Link href="/Contact">
+                <Link href="/">
                     <a> Hiroko Yamamoto</a>
                 </Link>
             </div>
@@ -32,7 +32,7 @@ export default function Navbar( {children} ) {
                 <Link href="/Galerie">
                     <a className={css.lien}>Galerie</a>
                 </Link>
-                <Link href="/">
+                <Link href="/Contact">
                     <a className={css.lien}>Contact</a>
                 </Link>
             </div>

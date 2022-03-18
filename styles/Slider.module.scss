@@ -1,0 +1,32 @@
+
+
+.globalContainer {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	border: 1px solid blue;
+}
+
+.overlay {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+
+	opacity: .5;
+	z-index: 1;
+
+}
+
+.caroussel {
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	border: 1px solid red;
+	height: auto;
+	margin: auto;
+	z-index: 2;
+
+
+
+}
