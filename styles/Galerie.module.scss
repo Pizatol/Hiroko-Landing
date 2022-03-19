@@ -1,9 +1,11 @@
 
 .galerieContainer {
+	position: relative;
 	width: 100%;
-	height: 100vh;
+	height:auto;
 	animation-duration: 1s;
 	animation-name: appear;	
+	padding:  150px 0;
 }
 
 @keyframes appear {
@@ -13,4 +15,29 @@
 	to {
 		opacity : 1
 	}
+}
+
+.galerieImg {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 100px auto;
+}
+
+.image {
+	margin: 15px;
+	padding: 15px;
+	border: 1px solid var(--gris);
+	border-radius: 5px;
+	transition: all .4s ease;
+}
+
+.image:hover {
+	transform: scale(1.05);
+}
+
+.slider {
+	position: absolute;
+	top: 0;
 }

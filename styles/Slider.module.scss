@@ -1,32 +1,36 @@
-
-
 .globalContainer {
-	position: relative;
-	height: 100vh;
-	width: 100vw;
-	border: 1px solid blue;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+   
+    z-index: 3;
 }
 
 .overlay {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-color: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150vh;
+    background-color: black;
 
-	opacity: .5;
-	z-index: 1;
-
+    opacity: 0.9;
+    z-index: 1;
 }
 
 .caroussel {
-	position: absolute;
-	top: 10%;
-	width: 100%;
-	border: 1px solid red;
-	height: auto;
-	margin: auto;
-	z-index: 2;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    z-index: 2;
 
+    p {
+        color: var(--gris-clair);
 
-
+        width: 20%;
+        margin: 0 auto 50px;
+    }
 }

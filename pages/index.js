@@ -43,13 +43,13 @@ export default function Home() {
                         </div>
                         <div className={css.liens}>
                             <Link href="/Horaire">
-                                <a>Horaire</a>
+                                <a className={css.a1}>Horaire</a>
                             </Link>
                             <Link href="/Galerie">
-                                <a>Galerie</a>
+                                <a className={css.a2}>Galerie</a>
                             </Link>
                             <Link href="/Contact">
-                                <a>Contact</a>
+                                <a className={css.a3}>Contact</a>
                             </Link>
                         </div>
                     </div>

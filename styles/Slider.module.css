@@ -1,26 +1,34 @@
 .globalContainer {
-  position: relative;
+  position: fixed;
+  top: 0;
   height: 100vh;
   width: 100vw;
-  border: 1px solid blue;
+  z-index: 3;
 }
 
 .overlay {
-  position: relative;
+  position: absolute;
+  top: 0;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   background-color: black;
-  opacity: .5;
+  opacity: 0.9;
   z-index: 1;
 }
 
 .caroussel {
   position: absolute;
-  top: 10%;
-  width: 100%;
-  border: 1px solid red;
+  top: 20%;
+  left: 25%;
+  width: 50%;
   height: auto;
   margin: auto;
   z-index: 2;
+}
+
+.caroussel p {
+  color: var(--gris-clair);
+  width: 20%;
+  margin: 0 auto 50px;
 }
 /*# sourceMappingURL=Slider.module.css.map */
