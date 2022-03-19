@@ -23,9 +23,11 @@ export default function Navbar( {children} ) {
             </div>
 
             <div className={css.right}>
-                <Link href="/">
+
+                {/* <Link href="/">
                     <a className={css.lien}>Horaire</a>
-                </Link>
+                </Link> */}
+                
                 <Link href="/">
                     <a className={css.lien}>Tarifs</a>
                 </Link>

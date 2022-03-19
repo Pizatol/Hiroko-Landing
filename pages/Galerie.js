@@ -96,6 +96,7 @@ export default function Galerie() {
                         key={img.id}
                     >
                         <Image
+                           
                             id={img.id}
                             src={img.image}
                             width={400}
