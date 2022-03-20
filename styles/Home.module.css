@@ -48,6 +48,10 @@
   width: 450px;
 }
 
+.mainRightPart h2 {
+  font-family: var(--title);
+}
+
 .mainLeftPart {
   border-radius: 50%;
   overflow: hidden;

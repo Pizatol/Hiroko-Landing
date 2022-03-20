@@ -31,17 +31,17 @@ export default function Home() {
 
                     <div className={css.mainRightPart}>
                     
-                        <h2>Hello</h2>
+                        <h2>Konnichiwa !</h2>
                         <div>
 
-                        <h3> Lorem, ipsum dolor.</h3>
+                        <h3>Venez apprendre le japonais dans une ambiance conviviale autour d&apos;un café !</h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Qui beatae nihil consequatur dolores culpa
-                            enim deleniti aliquid odio velit asperiores.
+                            Je vous propose d&apos;apprendre la langue japonaise par petits groupes dans le cadre d&apos;un méthode ludique mettant en avant la pratique par la conversation. Avec mon expérience de plus de 20 ans en tant que professeur, vous êtes certains de progresser efficacement. 
                         </p>
                         </div>
-                        <div className={css.liens}>
+
+                        
+                        {/* <div className={css.liens}>
                             <Link href="/Horaire">
                                 <a className={css.a1}>Horaire</a>
                             </Link>
@@ -51,7 +51,7 @@ export default function Home() {
                             <Link href="/Contact">
                                 <a className={css.a3}>Contact</a>
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </main>

@@ -35,9 +35,26 @@ export default function Contact() {
             );
 
         e.target.reset();
-
-
     };
+
+
+    // SPAN FUGACE
+
+    let timerInfo
+    let display  = false
+
+    const toggleBtn = () => {
+        display = true
+    }
+
+    if(display){
+        
+        timerInfo = setTimeout(() => {
+            setMessage(true)
+        }, 1000)
+
+        display = false
+    }
 
     return (
         <div className={css.globalContainer}>
@@ -93,11 +110,11 @@ export default function Contact() {
                     </div>
 
                     <button
-                    
+                    onClick={toggleBtn}
                      className={css.btnSubmit} type="submit">
                         Envoyer
                     </button>
-
+                    
                     {message && (
                         <span className={css.span}>
                             Message envoyé 

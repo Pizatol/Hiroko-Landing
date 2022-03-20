@@ -1,0 +1,119 @@
+.container {
+    padding: 100px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cotisation {
+	width: 30%;
+    color: orangered;
+    font-family: var(--text);
+    font-size: 1.5rem;
+	 border: 1px solid orangered;
+	 border-radius: 5px;
+	 text-align: center;
+	 margin: 100px auto 0;
+	 padding: 10px 10px;
+}
+
+.card,
+.card2,
+.card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+    border: 1px solid var(--bleu);
+    border-radius: 5px;
+    box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+.card2{
+	border: 1px solid var(--orange);
+}
+.card3 {
+	border: 1px solid var(--black);
+}
+
+.card:hover, .card2:hover, .card3:hover  {
+    transform: scale(1.04);
+}
+
+.title,
+.title2,
+.title3 {
+    width: 100%;
+    height: 220px;
+    background-color: var(--bleu);
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2,
+    h3,
+    span {
+        margin: 0;
+        font-family: var(--title);
+        color: var(--gris-clair);
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+.title2 {
+	background-color: var(--orange);
+}
+.title3 {
+	background-color: var(--black);
+}
+.tarifEtudiant {
+    font-size: 1rem;
+    color: var(--gris-clair);
+}
+
+.body {
+    font-family: var(--text);
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.bottom,
+.bottom2,
+.bottom3 {
+    height: 100px;
+    width: 100%;
+    background-color: var(--bleu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        font-family: var(--text);
+        font-size: 1.5rem;
+        color: var(--gris-clair);
+    }
+}
+.bottom2 {
+    background-color: var(--orange);
+}
+.bottom3 {
+	background-color: var(--black);
+}

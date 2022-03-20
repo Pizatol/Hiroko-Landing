@@ -52,6 +52,8 @@
 .image:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  -webkit-box-shadow: 5px 5px 18px 5px rgba(0, 0, 0, 0.51);
+          box-shadow: 5px 5px 18px 5px rgba(0, 0, 0, 0.51);
 }
 
 .slider {

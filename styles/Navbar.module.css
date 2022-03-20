@@ -1,53 +1,74 @@
-
-
 .container {
-	position: relative;
-	z-index: 2;
-	margin: auto;
-	width: 100%;		
-	margin-top: 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 80px;
-	padding: 0 80px;
-	background-color: transparent;
-
+  position: relative;
+  z-index: 2;
+  margin: 80px auto 100px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  background-color: transparent;
 }
-
 
 .left {
-	font-size: 35px;
-	font-family: var(--title);
-	display: flex;
-	align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
+
 .logo {
-	width: 20px;
-	height: 20px;
-	background-color: var(--orange);
-	margin-right: 10px;
-	border-radius: 50%;
-
+  margin-right: 2rem;
 }
 
+.containerTitle {
+  margin-left: 4rem;
+}
 
+.upperTitle {
+  font-family: var(--title);
+  font-size: 2rem;
+}
+
+.upperTitle h1 {
+  margin-bottom: 0px;
+}
+
+.downTitle {
+  font-family: var(--text);
+}
+
+.downTitle h2 {
+  margin-left: 10px;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.downTitle span {
+  font-size: 1rem;
+  margin-right: 20px;
+}
 
 .right a {
-	margin: 0 10px;
-	color: var(--black);
-	font-size: 25px;
-	font-family: var(--text);	
-	padding-right: 10px;
-	border: 1px solid transparent ;
-	border-radius: 10px;
-	padding: 10px 10px;
-	transition: all .4s ease-out;
-	
+  margin: 0 10px;
+  color: var(--black);
+  font-size: 25px;
+  font-family: var(--text);
+  padding-right: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px 10px;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
 }
-
 
 .right a:hover {
-	background-color: var(--gris);
-	/* color: var(--gris-clair); */
+  background-color: var(--gris);
+  /* color: var(--gris-clair); */
 }
+/*# sourceMappingURL=Navbar.module.css.map */

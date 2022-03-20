@@ -1,9 +1,96 @@
-
-
-import React from 'react'
+import React from "react";
+import css from "../styles/Tarifs.module.scss";
+import Link from "next/link";
 
 export default function Tarifs() {
-  return (
-	 <div>Tarifs</div>
-  )
+    return (
+        <>
+         <h4 className={css.cotisation}>
+                    Frais de cotisation gratuits !
+                </h4>
+            <div className={css.container}>
+               
+
+                <div className={css.cardContainer}>
+                    {/* COURS INDIVIDUEL */}
+
+                    <div className={css.card}>
+                        <div className={css.title}>
+                            <h2>cours individuel</h2>
+                            <h3> 40 € / cours</h3>
+                            <h4 className={css.tarifEtudiant}>
+                                {" "}
+                                étudiants : 35€ / cours
+                            </h4>
+                        </div>
+
+                        <div className={css.body}>
+                            Le cours est complètement construit à la carte.
+                            Chaque élève avance à son rythme; les contenus
+                            peuvent être adaptés aux centres d&apos;interêts de
+                            chacun.
+                        </div>
+
+                        <div className={css.bottom}>
+                            <Link href="/Contact">
+                                <a>Je m&apos;inscris !</a>
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* COURS SEMI INDIVIDUEL */}
+
+                    <div className={css.card2}>
+                        <div className={css.title2}>
+                            <h2>cours semi-individuel</h2>
+                            <span>(2-3 personnes)</span>
+                            <h3> ? / cours</h3>
+                            <h4 className={css.tarifEtudiant}>
+                                {" "}
+                                étudiants : ? / cours
+                            </h4>
+                        </div>
+
+                        <div className={css.body}>
+                            Le cours se déroule dans une ambiance conviviale, et
+                            nous pouvons adapter le niveau de cours au rythme de
+                            tous.
+                        </div>
+
+                        <div className={css.bottom2}>
+                            <Link href="/Contact">
+                                <a>Je m&apos;inscris !</a>
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* COURS EN GROUPE */}
+
+                    <div className={css.card3}>
+                        <div className={css.title3}>
+                            <h2>cours en groupe</h2>
+                            <span>(4-6 personnes)</span>
+                            <h3> ? / cours</h3>
+                            <h4 className={css.tarifEtudiant}>
+                                {" "}
+                                étudiants : ? / cours
+                            </h4>
+                        </div>
+
+                        <div className={css.body}>
+                            La taille du groupe permet d&apos;alimenter les
+                            conversations dans une bonne ambiance et encourager
+                            l&apos;entraide des élèves.
+                        </div>
+
+                        <div className={css.bottom3}>
+                            <Link href="/Contact">
+                                <a>Je m&apos;inscris !</a>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
