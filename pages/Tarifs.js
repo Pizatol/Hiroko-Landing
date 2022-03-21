@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Tarifs() {
     return (
-        <>
+        <div className={css.globalContainer}>
          <h4 className={css.cotisation}>
                     Frais de cotisation gratuits !
                 </h4>
@@ -44,11 +44,8 @@ export default function Tarifs() {
                         <div className={css.title2}>
                             <h2>cours semi-individuel</h2>
                             <span>(2-3 personnes)</span>
-                            <h3> ? / cours</h3>
-                            <h4 className={css.tarifEtudiant}>
-                                {" "}
-                                étudiants : ? / cours
-                            </h4>
+                            <h3> 25€ / cours</h3>
+                            
                         </div>
 
                         <div className={css.body}>
@@ -70,11 +67,8 @@ export default function Tarifs() {
                         <div className={css.title3}>
                             <h2>cours en groupe</h2>
                             <span>(4-6 personnes)</span>
-                            <h3> ? / cours</h3>
-                            <h4 className={css.tarifEtudiant}>
-                                {" "}
-                                étudiants : ? / cours
-                            </h4>
+                            <h3> 15€ / cours</h3>
+                            
                         </div>
 
                         <div className={css.body}>
@@ -91,6 +85,15 @@ export default function Tarifs() {
                     </div>
                 </div>
             </div>
-        </>
+
+        <div className={css.downPage}>
+
+            <h3>
+
+                    Un cours dure une heure. Grâce à la taille réduite des groupes, nous pouvons progresser efficacement et encourager fortement la participation de chaque élève. 
+            </h3>
+             
+        </div>
+        </div>
     );
 }

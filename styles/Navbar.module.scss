@@ -1,84 +1,68 @@
-
-
 .container {
-	position: relative;
-	z-index: 2;
-	margin: 80px auto 100px;
-	width: 90%;		
-	
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 80px;
+    position: relative;
+    z-index: 2;
+    margin: 80px auto 100px;
+    width: 90%;
 
-	background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
 
+    background-color: transparent;
 }
 .left {
-	display: flex;
-
+    display: flex;
 }
 
-	// LOGO
+// LOGO
 
 .logo {
-
-	margin-right: 2rem;
-	
-	
+    margin-right: 2rem;
 }
 
 // TITRE
 
 .containerTitle {
-
-
-	margin-left: 4rem;
+    margin-left: 4rem;
 }
 
 .upperTitle {
-	font-family: var(--title);
-	font-size: 2rem;
-	h1{
-		margin-bottom: 0px;
-	}
+    font-family: var(--title);
+    font-size: 2rem;
+    h1 {
+        margin-bottom: 0px;
+    }
 }
 .downTitle {
-	font-family: var(--text);
-	
-	h2 {
-		margin-left: 10px;
-		font-size: 2rem;
-		margin-top: 0;
+    font-family: var(--text);
 
-		
-
-	}
-	span {
-		font-size: 1rem;
-		margin-right: 20px;
-
-	}
+    h2 {
+        margin-left: 10px;
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    span {
+        font-size: 1rem;
+        margin-right: 20px;
+    }
 }
-
-
-
 
 .right a {
-	margin: 0 10px;
-	color: var(--black);
-	font-size: 25px;
-	font-family: var(--text);	
-	padding-right: 10px;
-	border: 1px solid transparent ;
-	border-radius: 10px;
-	padding: 10px 10px;
-	transition: all .4s ease-out;
-	
+    margin: 0 10px;
+    color: var(--black);
+    font-size: 20px;
+    font-family: var(--text);
+    padding-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px 10px;
+    transition: all 0.4s ease-out;
 }
 
-
 .right a:hover {
-	background-color: var(--gris);
-	/* color: var(--gris-clair); */
+    background-color: var(--gris) ;  
+	 box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
+ 
+   
 }

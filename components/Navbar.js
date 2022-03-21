@@ -9,8 +9,6 @@ export default function Navbar({ children }) {
     return (
         <>
             <div className={css.container}>
-
-
                 <div className={css.left}>
                     <div className={css.logo}>
                         <Link href="/">
@@ -26,30 +24,35 @@ export default function Navbar({ children }) {
                     </div>
                 </div>
 
-                    <div className={css.center}>
-                        <div className={css.containerTitle}>
-                            <Link href="/">
-                                <a>
-                                    <div className={css.upperTitle}>
-                                        <h1>Café Japonais </h1>
-                                    </div>
-                                    <div className={css.downTitle}>
-                                        <h2>
-                                            <span>By</span>Hiroko Yamamoto
-                                        </h2>
-                                    </div>
-                                </a>
-                            </Link>
-                        </div>
+                <div className={css.center}>
+                    <div className={css.containerTitle}>
+                        <Link href="/">
+                            <a>
+                                <div className={css.upperTitle}>
+                                    <h1>Café Japonais </h1>
+                                </div>
+                                <div className={css.downTitle}>
+                                    <h2>
+                                        <span>By</span>Hiroko Yamamoto
+                                    </h2>
+                                </div>
+                            </a>
+                        </Link>
                     </div>
+                </div>
 
                 <div className={css.right}>
                     {/* <Link href="/">
                     <a className={css.lien}>Horaire</a>
                 </Link> */}
-
+                    <Link href="/Methode">
+                        <a className={css.lien}>Méthode</a>
+                    </Link>
                     <Link href="/Tarifs">
                         <a className={css.lien}>Tarifs</a>
+                    </Link>
+                    <Link href="/Experience">
+                        <a className={css.lien}>Expérience</a>
                     </Link>
                     <Link href="/Galerie">
                         <a className={css.lien}>Galerie</a>

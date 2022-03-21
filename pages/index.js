@@ -32,6 +32,7 @@ export default function Home() {
                     <div className={css.mainRightPart}>
                     
                         <h2>Konnichiwa !</h2>
+                        <h2>こんにちは !</h2>
                         <div>
 
                         <h3>Venez apprendre le japonais dans une ambiance conviviale autour d&apos;un café !</h3>

@@ -1,0 +1,38 @@
+
+
+.cardContainer {
+	height: auto;
+	width: 50%;
+	margin: auto;
+	padding: 30px;	
+	animation-duration: 1s;
+	animation-name: appear;
+
+	h1 {
+		font-family: var(--title);
+		font-size: 2.5rem;
+		margin-bottom: 50px;
+		text-align: center;
+		color: var(--black);
+	}
+	p {
+		font-family: var(--text);
+		font-size: 1.2rem;
+		margin-bottom: 50px;
+	}
+
+
+
+}
+
+
+@keyframes appear {
+	from {
+		 opacity: 0;
+	}
+	to {
+		 opacity: 1;
+	}
+}
+
+
