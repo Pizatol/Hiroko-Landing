@@ -18,6 +18,7 @@ export default function Navbar({ children }) {
                                     width={150}
                                     height={150}
                                     alt="logo café japonais"
+                                    
                                 />
                             </a>
                         </Link>

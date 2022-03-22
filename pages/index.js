@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/dist/client/link";
 import css from "../styles/Home.module.css";
 
-import hiroko from "../public/assets/hiro.jpg";
+import hiroko from "../public/assets/profil/hiro.jpg";
 
 export default function Home() {
     return (

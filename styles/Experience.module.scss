@@ -3,6 +3,8 @@
 	width: 60%;
 	height: auto;
 	margin: 150PX auto 0;
+	animation-duration: .4s;
+    animation-name: appear;
 
 	h1 {
 		text-align: center;
@@ -10,6 +12,16 @@
 		font-size: 3rem;
 		color: var(--black);
 		margin-bottom: 100px;
+	}
+}
+@keyframes appear {
+	from {
+		 opacity: 0;
+		transform: translateY(40px);
+	}
+	to {
+		 opacity: 1;
+		 transform: translateY(0);
 	}
 }
 
@@ -22,9 +34,9 @@
 }
 
 .left {
-	border: 5px solid var(--rose);
+	// border: 5px solid var(--rose);
 	border-radius: 5px;
-	padding: 10px;
+	overflow: hidden;
 	width: 40%;
 	height: auto;
 }
@@ -46,18 +58,18 @@
 	margin-bottom: 100px;
 
 	p {
-		font-family: var(--text);
-		font-size: 1.3rem;
-		// letter-spacing: 2px;
-		font-weight: 300;
+		font-family: var(--standard);
+		font-size: 1.5rem;
+		line-height: 35px;
+		font-weight: 400;
 		color: var(--black);
 	}
 	ul {
 		list-style-type: none;
-		font-family: var(--text);
-		font-size: 1.3rem;
+		font-family: var(--standard);
+		font-size: 1.5rem;
 		// letter-spacing: 2px;
-		font-weight: 300;
+		font-weight: 500;
 		color: var(--black);
 	}
 	li {

@@ -1,14 +1,16 @@
 
 .globalContainer {
-    animation-duration: 1s;
+    animation-duration: .4s;
     animation-name: appear;
 }
 @keyframes appear {
     from {
         opacity: 0;
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -101,9 +103,10 @@
 }
 
 .body {
-    font-family: var(--text);
+    font-family: var(--standard);
     color: var(--black);
-    font-weight: bold;
+    font-weight: 500;
+    line-height: 40px;
     font-size: 1.4rem;
     text-align: center;
     margin: 0 15px;
@@ -138,11 +141,10 @@
     padding-bottom: 200px;
     h3 {
         
-        border: 1px solid var(--gris);
+        border: 2px solid orangered;
         border-radius: 5px;
         padding: 15px;
-
-        font-family: var(--text);
+        font-family: var(--standard);
         font-size: 1.5rem;
         text-align: center;
     }

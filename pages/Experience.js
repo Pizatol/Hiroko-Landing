@@ -21,7 +21,7 @@ export default function Experience() {
                     </div>
                     <div className={css.right}>
                         <p>
-                            Je m'appelle Hiroko Yamamoto et je dispense des
+                            Je m&apos;appelle Hiroko Yamamoto et je dispense des
                             cours de langue japonaise depuis plus de 20 ans!
                         </p>
                     </div>
@@ -30,10 +30,10 @@ export default function Experience() {
                 <div className={css.cv}>
                     <p>
 						  👶🏻
-                        J'enseigne à des enfants de l'association DULALA, ils
-                        sont âgés de 3 à 7 ans. S'amuser et enseigner est
+                        J&apos;enseigne à des enfants de l&apos;association DULALA, ils
+                        sont âgés de 3 à 7 ans. S&apos;amuser et enseigner est
                         devenue une seconde nature chez moi! Riche de cette
-                        expérience, j'utilise beaucoup de méthodes ludiques pour
+                        expérience, j&apos;utilise beaucoup de méthodes ludiques pour
                         apprendre facilement.
                     </p>
 
@@ -44,7 +44,7 @@ export default function Experience() {
 						  <ul>
 							  <li>IPAC (école de commerce)</li>
 							  <li>ISMAC (école de marketting / commerce)</li>
-							  <li>CEGI (école d'ingénieur)</li>
+							  <li>CEGI (école d&apos;ingénieur)</li>
 							  <li>CREAPOLE (école de design)</li>
 							  <li>GAMING CAMPUS ( école de développement et Marketting spécialisée dans les jeux vidéos)</li>
 							  <li>IIM (Institue Of Intern)</li>
@@ -52,12 +52,15 @@ export default function Experience() {
 						  </ul>
 
 
-							{/* <p>J'enseigne également en cours particuliers (de 7 à 77 ans). Je construits des cours en prenant pour base les intérêts personnels de mes élèves.  </p> */}
+							{/* <p>J'enseigne également en cours particuliers (de 7 à 77 ans). Je construits des cours en prenant pour base les intérêts personnels de mes élèves.  </p> 
+                            
+                          
+                            */}
 
-							<p> 👩‍🏫 J'enseigne également aux adultes, je construis mes cours en me basant sur les intérêts personnels de mes élèves.</p>
+							<p> 👩‍🏫 J&apos;enseigne également aux adultes, je construis mes cours en me basant sur les intérêts personnels de mes élèves.</p>
 							<ul>
 								<li>Mairie de Paris</li>
-								<li>Entreprises (Toyota Paris, L'Oréal...)</li>
+								<li>Entreprises (Toyota Paris, L&apos;Oréal...)</li>
 								<li>Cours individuels (des élèves collégiens aux personnes retraitées)</li>
 							</ul>
 
