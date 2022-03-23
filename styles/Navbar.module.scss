@@ -66,3 +66,13 @@
  
    
 }
+
+.burger {
+    display: block;
+    div {
+        width: 10px;
+        height: 1px;
+        border-bottom: 1px solid black;
+        margin: 2px;
+    }
+}

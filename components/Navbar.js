@@ -61,6 +61,11 @@ export default function Navbar({ children }) {
                     <Link href="/Contact">
                         <a className={css.lien}>Contact</a>
                     </Link>
+                    <div className={css.burger}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
             {children}
