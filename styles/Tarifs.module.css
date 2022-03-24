@@ -1,6 +1,7 @@
 .globalContainer {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  position: relative;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
   -webkit-animation-name: appear;
           animation-name: appear;
 }
@@ -8,18 +9,26 @@
 @-webkit-keyframes appear {
   from {
     opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes appear {
   from {
     opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -71,7 +80,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 400px;
+  width: 350px;
   height: 600px;
   margin: 10px;
   border: 1px solid var(--bleu);
@@ -87,10 +96,12 @@
 }
 
 .card3 {
-  border: 1px solid var(--black);
+  border: 1px solid #28A745;
 }
 
-.card:hover, .card2:hover, .card3:hover {
+.card:hover,
+.card2:hover,
+.card3:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
 }
@@ -149,7 +160,7 @@
 }
 
 .title3 {
-  background-color: var(--black);
+  background-color: #28A745;
 }
 
 .tarifEtudiant {
@@ -158,9 +169,10 @@
 }
 
 .body {
-  font-family: var(--text);
+  font-family: var(--standard);
   color: var(--black);
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 40px;
   font-size: 1.4rem;
   text-align: center;
   margin: 0 15px;
@@ -196,7 +208,7 @@
 }
 
 .bottom3 {
-  background-color: var(--black);
+  background-color: #28A745;
 }
 
 .downPage {
@@ -206,11 +218,48 @@
 }
 
 .downPage h3 {
-  border: 1px solid var(--gris);
+  border: 2px solid orangered;
   border-radius: 5px;
   padding: 15px;
-  font-family: var(--text);
-  font-size: 1.5rem;
+  font-family: var(--standard);
+  color: var(--black);
+  font-size: 1.2rem;
   text-align: center;
+}
+
+.downPage h4 {
+  font-family: var(--standard);
+  color: var(--black);
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cotisation {
+    font-size: 1rem;
+  }
+  .card,
+  .card2,
+  .card3 {
+    height: 500px;
+  }
+  .title,
+  .title2,
+  .title3 {
+    padding-top: 30px;
+    height: 150px;
+  }
+  .title h2,
+  .title2 h2,
+  .title3 h2 {
+    font-size: 1.5rem;
+  }
+  .title h3,
+  .title2 h3,
+  .title3 h3 {
+    font-size: 1.5rem;
+  }
+  .body {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=Tarifs.module.css.map */

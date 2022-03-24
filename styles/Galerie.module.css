@@ -2,8 +2,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
   -webkit-animation-name: appear;
           animation-name: appear;
   padding: 150px 0;

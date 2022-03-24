@@ -1,6 +1,7 @@
 .container {
     width: 100%;
     height: auto;
+    margin-top: 200px;
     background-color: var(--gris-clair);
     animation-duration: .3s;
     animation-name: appear;
@@ -10,11 +11,11 @@
 
 
 .mainContainer {
-    margin-top: 200px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 @keyframes appear {
     from {
@@ -28,8 +29,8 @@
 }
 
 .mainLeftPart {
-    width: 500px;
-	 margin-right: 30px;
+    width: 400px;
+	//  margin-right: 30px;
 }
 .mainRightPart {
     width: 450px;
@@ -49,26 +50,30 @@
 // RIGHT PART
 
 .mainRightPart {
-    width: 600px;
+    width: 450px;    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 50px;
 	 color: var(--black);
 
     h2 {
         font-family: var(--title);
-        font-size: 4rem;
+        font-size: 3rem;
         margin: 0;
+        text-align: start;
     }
     h3 {
         font-family: var(--title);
         font-size: 1.5rem;
         margin: 30px 0;
+        text-align: start;
     }
     p {
         font-family: var(--text);
-        font-size: 1.3rem;
+        font-size: 1rem;
+        line-height: 20px;
+        text-align: start;
     }
 }
 .liens {

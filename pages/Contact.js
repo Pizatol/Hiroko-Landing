@@ -58,19 +58,8 @@ export default function Contact() {
 
     return (
         <div className={css.globalContainer}>
-            <div className={css.leftPart}>
-                <div className={css.title}>
-                    <h1>CONTACT</h1>
-                    <p>Hésitez pas à me contacter</p>
-                </div>
-                <div className={css.phone}>
-                    <h3>Téléphone</h3>
-                    <p>00 00 00 00 00</p>
-                </div>
-                <div className={css.mail}>
-                    <h3>Email</h3>
-                    <p>hirokohiroko1@gmail.com</p>
-                </div>
+            <div className={css.title}>
+                <h1>Contact</h1>
             </div>
             <div className={css.rightPart}>
                 <form ref={form}  className={css.form}>
@@ -126,3 +115,18 @@ export default function Contact() {
         </div>
     );
 }
+
+       {/* <div className={css.leftPart}>
+                <div className={css.title}>
+                    <h1>CONTACT</h1>
+                    <p>Hésitez pas à me contacter</p>
+                </div>
+                <div className={css.phone}>
+                    <h3>Téléphone</h3>
+                    <p>00 00 00 00 00</p>
+                </div>
+                <div className={css.mail}>
+                    <h3>Email</h3>
+                    <p>hirokohiroko1@gmail.com</p>
+                </div>
+            </div> */}

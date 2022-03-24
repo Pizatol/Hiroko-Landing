@@ -1,6 +1,7 @@
 import React from "react";
 import css from "../styles/Tarifs.module.scss";
 import Link from "next/link";
+import Footer from "../components/Footer";
 
 export default function Tarifs() {
     return (
@@ -19,8 +20,8 @@ export default function Tarifs() {
                             <h2>cours individuel</h2>
                             <h3> 40 € / cours</h3>
                             <h4 className={css.tarifEtudiant}>
-                                {" "}
-                                étudiants : 35€ / cours
+                                
+                                10 cours : 350 €
                             </h4>
                         </div>
 
@@ -45,7 +46,10 @@ export default function Tarifs() {
                             <h2>cours semi-individuel</h2>
                             <span>(2-3 personnes)</span>
                             <h3> 25€ / cours</h3>
-                            
+                            <h4 className={css.tarifEtudiant}>
+                                
+                                10 cours : 200 €
+                            </h4>
                         </div>
 
                         <div className={css.body}>
@@ -68,7 +72,10 @@ export default function Tarifs() {
                             <h2>cours en groupe</h2>
                             <span>(4-6 personnes)</span>
                             <h3> 15€ / cours</h3>
-                            
+                            <h4 className={css.tarifEtudiant}>
+                                
+                                10 cours : 100 €
+                            </h4>
                         </div>
 
                         <div className={css.body}>
@@ -92,8 +99,10 @@ export default function Tarifs() {
 
                     Un cours dure une heure. Grâce à la taille réduite des groupes, nous pouvons progresser efficacement et encourager fortement la participation de chaque élève. 
             </h3>
+            <h4>Règlements autorisés : chèque et virements bancaires</h4>
              
         </div>
+        <Footer/>
         </div>
     );
 }

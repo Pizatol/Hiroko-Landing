@@ -1,6 +1,6 @@
-
 .globalContainer {
-    animation-duration: .4s;
+    position: relative;
+    animation-duration: 0.4s;
     animation-name: appear;
 }
 @keyframes appear {
@@ -27,15 +27,15 @@
     flex-wrap: wrap;
 }
 .cotisation {
-	width: 30%;
+    width: 30%;
     color: orangered;
     font-family: var(--text);
     font-size: 1.5rem;
-	 border: 1px solid orangered;
-	 border-radius: 5px;
-	 text-align: center;
-	 margin: 100px auto 0;
-	 padding: 10px 10px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    text-align: center;
+    margin: 100px auto 0;
+    padding: 10px 10px;
 }
 
 .card,
@@ -45,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 400px;
+    width: 350px;
     height: 600px;
     margin: 10px;
     border: 1px solid var(--bleu);
@@ -53,14 +53,16 @@
     box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
     transition: all 0.4s ease;
 }
-.card2{
-	border: 1px solid var(--orange);
+.card2 {
+    border: 1px solid var(--orange);
 }
 .card3 {
-	border: 1px solid var(--black);
+    border: 1px solid #28A745;
 }
 
-.card:hover, .card2:hover, .card3:hover  {
+.card:hover,
+.card2:hover,
+.card3:hover {
     transform: scale(1.04);
 }
 
@@ -92,10 +94,10 @@
     }
 }
 .title2 {
-	background-color: var(--orange);
+    background-color: var(--orange);
 }
 .title3 {
-	background-color: var(--black);
+    background-color: #28A745;
 }
 .tarifEtudiant {
     font-size: 1rem;
@@ -132,7 +134,8 @@
     background-color: var(--orange);
 }
 .bottom3 {
-	background-color: var(--black);
+    background-color: #28A745 ;
+    // background-color: var(--black) ;
 }
 
 .downPage {
@@ -140,12 +143,58 @@
     margin: auto;
     padding-bottom: 200px;
     h3 {
-        
         border: 2px solid orangered;
         border-radius: 5px;
         padding: 15px;
         font-family: var(--standard);
-        font-size: 1.5rem;
+        color: var(--black);
+        font-size: 1.2rem;
         text-align: center;
     }
+    h4 {
+        font-family: var(--standard);
+        color: var(--black);
+        font-size: 1.2rem;
+    }
 }
+
+// @media screen and (max-width: 1200px) {
+
+// }
+
+// @media screen and (max-width: 1024px) {
+
+// }
+
+@media screen and (max-width: 768px) {
+    .cotisation {
+        font-size: 1rem;
+    }
+    .card,
+    .card2,
+    .card3 {
+        height: 500px;
+    }
+
+    .title,
+    .title2,
+    .title3 {
+        padding-top: 30px;
+        height: 150px;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .body {
+        font-size: 1rem;
+    }
+}
+
+// @media screen and (max-width: 480px) {
+
+// }
