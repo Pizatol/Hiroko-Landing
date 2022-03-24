@@ -1,7 +1,8 @@
-.container {
+.globalContainer {
     width: 100%;
     height: auto;
     margin-top: 200px;
+
     background-color: var(--gris-clair);
     animation-duration: .3s;
     animation-name: appear;
@@ -15,37 +16,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 300px ;
 }
-@keyframes appear {
-    from {
-        opacity: 0;
 
-    }
-    to {
-        opacity: 1;
 
-    }
-}
+// LEFT PART
 
 .mainLeftPart {
     width: 400px;
 	//  margin-right: 30px;
-}
-.mainRightPart {
-    width: 450px;
-    
-    h2 {
-        font-family: var(--title);
-    }
-}
-
-// LEFT PART
-.mainLeftPart {
     border-radius: 50%;
     overflow: hidden;
-  
 }
+
+
+
 
 // RIGHT PART
 
@@ -97,3 +82,60 @@
     background-color: var(--bleu);
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .mainLeftPart {
+        width: 350px;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 480px) {
+
+    
+    .mainRightPart {
+        align-items: center;
+        text-align: center;
+        width: 380px;
+
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .80rem;
+        }
+    }
+}
+
+// @media screen and (max-width: 1200px) {
+    
+// }
+
+// @media screen and (max-width: 1024px) {
+    
+// }
+
+// @media screen and (max-width: 768px) {
+    
+// }
+
+// @media screen and (max-width: 480px) {
+    
+// }

@@ -7,10 +7,7 @@ import facebook from "../public/facebook.png";
 export default function Footer() {
     return (
         <footer className={css.globalContainer}>
-            <div className={css.phone}>
-                <h2>Téléphone</h2>
-                <p>00 00 00 00</p>
-            </div>
+            
             <div className={css.email}>
                 <h2>Email</h2>
                 <p>info@mysite.com</p>

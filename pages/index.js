@@ -9,7 +9,7 @@ import hiroko from "../public/assets/profil/hiro.jpg";
 
 export default function Home() {
     return (
-        <div className={css.container}>
+        <div className={css.globalContainer}>
             <Head>
                 <title>Café Japonais</title>
                 <meta

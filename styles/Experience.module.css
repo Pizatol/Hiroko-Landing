@@ -1,7 +1,7 @@
 .globalContainer {
-  width: 60%;
+  width: 100%;
   height: auto;
-  margin: 150PX auto 0;
+  margin: auto;
   -webkit-animation-duration: .4s;
           animation-duration: .4s;
   -webkit-animation-name: appear;
@@ -51,7 +51,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 100px 100px;
 }
 
 .left {
@@ -65,21 +69,21 @@
   width: 40%;
 }
 
-.right p {
+.right h4 {
   font-family: var(--text);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 4px;
   color: var(--black);
 }
 
 .cv {
-  margin-bottom: 100px;
+  margin: 0 100PX 100PX;
 }
 
 .cv p {
   font-family: var(--standard);
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 35px;
   font-weight: 400;
   color: var(--black);
@@ -88,12 +92,36 @@
 .cv ul {
   list-style-type: none;
   font-family: var(--standard);
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--black);
 }
 
 .cv li {
   margin-bottom: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+  .left {
+    width: 70%;
+  }
+  .right {
+    width: 80%;
+  }
+  .right h4 {
+    font-size: 1rem;
+  }
+  .cv {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=Experience.module.css.map */

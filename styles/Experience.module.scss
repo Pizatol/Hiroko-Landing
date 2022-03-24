@@ -1,8 +1,10 @@
 
 .globalContainer {
-	width: 60%;
+	width: 100%;
 	height: auto;
-	margin: 150PX auto 0;
+	margin: auto;
+
+
 	animation-duration: .4s;
     animation-name: appear;
 
@@ -29,7 +31,8 @@
 	display: flex;
 	justify-content: space-around;	
 	align-items: center;
-	margin-bottom: 50px;
+	flex-direction: column;
+	margin: 0 100px 100px;
 
 }
 
@@ -47,9 +50,9 @@
 .right {
 	width: 40%;
 
-	p {
+	h4 {
 		font-family: var(--text);
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		// letter-spacing: 2px;
 		font-weight: 600;
 		letter-spacing: 4px;
@@ -59,11 +62,11 @@
 
 .cv {
 
-	margin-bottom: 100px;
+	margin: 0 100PX 100PX;
 
 	p {
 		font-family: var(--standard);
-		font-size: 1.5rem;
+		font-size: 1rem;
 		line-height: 35px;
 		font-weight: 400;
 		color: var(--black);
@@ -71,7 +74,7 @@
 	ul {
 		list-style-type: none;
 		font-family: var(--standard);
-		font-size: 1.5rem;
+		font-size: 1rem;
 		// letter-spacing: 2px;
 		font-weight: 500;
 		color: var(--black);
@@ -80,6 +83,37 @@
 		margin-bottom: 6px;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+
+	.left {
+		width: 70%;
+	}
+
+
+    .right {
+
+		width: 80%;
+
+		 h4 {
+			 font-size: 1rem;
+		 }
+	 }
+
+	 .cv {
+		 margin: 10px;
+	 }
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+		 width: 100%;
+	 }
+	 .right {
+		 width: 100%;
+	 }
+}
+
 
 // @media screen and (max-width: 1200px) {
     

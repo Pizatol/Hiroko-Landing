@@ -1,6 +1,7 @@
 import React from "react";
 import css from "../styles/Experience.module.scss";
 import Image from "next/image";
+import Footer from "../components/Footer";
 
 import hirokoCours from "../public/assets/profil/hirokoCours.JPG";
 
@@ -20,10 +21,10 @@ export default function Experience() {
                         />
                     </div>
                     <div className={css.right}>
-                        <p>
-                            Je m&apos;appelle Hiroko Yamamoto et je dispense des
+                        <h4>
+                            Je m&apos;appelle Hiroko et je dispense des
                             cours de langue japonaise depuis plus de 20 ans!
-                        </p>
+                        </h4>
                     </div>
                 </div>
 
@@ -52,10 +53,7 @@ export default function Experience() {
 						  </ul>
 
 
-							{/* <p>J'enseigne également en cours particuliers (de 7 à 77 ans). Je construits des cours en prenant pour base les intérêts personnels de mes élèves.  </p> 
-                            
-                          
-                            */}
+						
 
 							<p> 👩‍🏫 J&apos;enseigne également aux adultes, je construis mes cours en me basant sur les intérêts personnels de mes élèves.</p>
 							<ul>
@@ -66,6 +64,7 @@ export default function Experience() {
 
                 </div>
             </section>
+            <Footer/>
         </div>
     );
 }
