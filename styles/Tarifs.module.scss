@@ -66,6 +66,28 @@
     transform: scale(1.04);
 }
 
+    // ******* ANIMATION
+.card {
+    animation : fadein 1s
+}
+.card2 {
+    animation : fadein 1.5s
+}
+.card3 {
+    animation : fadein 2s
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    // 50% {
+    //     opacity: 0;
+    // }
+    100% {
+        opacity: 1;
+    }
+}
+
 .title,
 .title2,
 .title3 {

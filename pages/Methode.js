@@ -10,7 +10,7 @@ export default function Methode() {
     return (
         <>
             <div className={css.globalContainer}>
-                <h1>Méthode personnelle</h1>
+                <h1 className={css.mainTitle}>Méthode personnelle</h1>
                 <div className={css.delimitation}></div>
                 <div className={css.firstCard}>
                     <div className={css.text}>
@@ -34,18 +34,19 @@ export default function Methode() {
                         />
                     </div>
                 </div>
-                <p>
-                    J&apos;organise des sorties pour faire découvrir la culture
-                    japonaise !
-                    <ul>
-                        <li>Cérémonie du thé,</li>
-                        <li>Cinéma japonais,</li>
-                        <li>Pique niques,</li>
-                        <li>Cours de cuisine japonaise</li>
-                        <li>...</li>
-                    </ul>
-                </p>
-                <div className={css.bottomCard}>
+                <div className={css.middlePart}>
+                    <h1>
+                        J&apos;organise des sorties pour faire découvrir la
+                        culture japonaise !
+                    </h1>
+                        <ul>
+                            <li>Cérémonie du thé,</li>
+                            <li>Cinéma japonais,</li>
+                            <li>Pique niques,</li>
+                            <li>Cours de cuisine japonaise</li>
+                            <li>...</li>
+                        </ul>
+                        <div className={css.bottomCard}>
                     <div>
                         <Image
                             src={tea}
@@ -65,6 +66,8 @@ export default function Methode() {
                         />
                     </div>
                 </div>
+                </div>
+               
             </div>
         </>
     );

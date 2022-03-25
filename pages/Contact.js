@@ -59,7 +59,7 @@ export default function Contact() {
     return (
         <div className={css.globalContainer}>
             <div className={css.title}>
-                <h1>Contact</h1>
+                <h1>Contactez moi !</h1>
             </div>
             <div className={css.rightPart}>
                 <form ref={form}  className={css.form}>

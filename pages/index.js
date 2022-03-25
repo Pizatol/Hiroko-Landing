@@ -6,6 +6,7 @@ import css from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 
 import hiroko from "../public/assets/profil/hiro.jpg";
+import wallpaper from "../public/wallpaper.jpg";
 
 export default function Home() {
     return (
@@ -20,6 +21,18 @@ export default function Home() {
             </Head>
 
             <main className={css.mainContainer}>
+                <div className={css.wallpaper}>
+                    <Image
+                        src={wallpaper}
+                        width={2400}
+                        height={1590}
+                        alt="fond d'écran"
+                        // layout="responsive"
+                        layout="fixed"
+                        placeholder="blur"
+                    />
+                </div>
+
                 <div className={css.mainLeftPart}>
                     <Image
                         src={hiroko}
@@ -30,8 +43,8 @@ export default function Home() {
                 </div>
 
                 <div className={css.mainRightPart}>
-                    <h2>Konnichiwa !</h2>
-                    <h2>こんにちは !</h2>
+                    <h2 className={css.title1}>Konnichiwa !</h2>
+                    <h2 className={css.title2}>こんにちは !</h2>
                     <div>
                         <h3>
                             Venez apprendre le japonais dans une ambiance
@@ -48,6 +61,11 @@ export default function Home() {
                     </div>
                 </div>
             </main>
+            <div className={css.contact}>
+                <Link href="/Contact">
+                    <button className={css.btnRdv}>Me contacter</button>
+                </Link>
+            </div>
 
             <Footer />
         </div>

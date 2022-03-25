@@ -9,8 +9,8 @@ export default function Footer() {
         <footer className={css.globalContainer}>
             
             <div className={css.email}>
-                <h2>Email</h2>
-                <p>info@mysite.com</p>
+                <h2></h2>
+                <p></p>
             </div>
             <div className={css.network}>
                 <h2>Retrouvez moi !</h2>
@@ -24,7 +24,7 @@ export default function Footer() {
                             width={30}
                             height={30}
                             alt="icone facebook"
-                            layout="responsive"
+                            
                         />
                     </div>
                 </Link>

@@ -4,17 +4,7 @@ import css from "../styles/Galerie.module.scss";
 import Image from "next/image";
 import { ModalContext } from "../context/ModalContext";
 
-// import img1 from "../public/assets/galeryImage/img1.JPG";
-// import img2 from "../public/assets/galeryImage/img2.JPG";
-// import img3 from "../public/assets/galeryImage/img3.JPG";
-// import img4 from "../public/assets/galeryImage/img4.JPG";
-// import img5 from "../public/assets/galeryImage/img5.JPG";
-// import img6 from "../public/assets/galeryImage/img6.JPG";
-// import img7 from "../public/assets/galeryImage/img7.JPG";
-// import img8 from "../public/assets/galeryImage/img8.JPG";
-// import img9 from "../public/assets/galeryImage/img9.JPG";
-// import img10 from "../public/assets/galeryImage/img10.JPG";
-// import img11 from "../public/assets/galeryImage/img11.JPG";
+
 
 import img1 from '../public/assets/galeryImage/img1.jpg'
 import img2 from '../public/assets/galeryImage/img2.jpg'

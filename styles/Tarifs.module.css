@@ -106,6 +106,39 @@
           transform: scale(1.04);
 }
 
+.card {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+}
+
+.card2 {
+  -webkit-animation: fadein 1.5s;
+          animation: fadein 1.5s;
+}
+
+.card3 {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .title,
 .title2,
 .title3 {

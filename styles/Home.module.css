@@ -1,8 +1,8 @@
 .globalContainer {
+  position: relative;
   width: 100%;
   height: auto;
-  margin-top: 200px;
-  background-color: var(--gris-clair);
+  background-color: transparent;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
   -webkit-animation-name: appear;
@@ -19,17 +19,31 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px;
+  padding: 50px;
+  height: 700px;
+}
+
+.wallpaper {
+  position: absolute;
+  width: 100%;
+  height: 120vh;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.35;
 }
 
 .mainLeftPart {
   width: 400px;
   border-radius: 50%;
   overflow: hidden;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
 }
 
 .mainRightPart {
   width: 450px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +54,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 50px;
+  margin-left: 100px;
   color: var(--black);
 }
 
@@ -56,13 +70,77 @@
   font-size: 1.5rem;
   margin: 30px 0;
   text-align: start;
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
 }
 
 .mainRightPart p {
   font-family: var(--text);
   font-size: 1rem;
   line-height: 20px;
+  font-weight: 600;
   text-align: start;
+  -webkit-animation: fadein 5s;
+          animation: fadein 5s;
+}
+
+.title1 {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+.title2 {
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
+.contact {
+  width: 100%;
+  text-align: center;
+}
+
+.contact button {
+  font-family: var(--standard);
+  font-size: 2rem;
+  color: var(--gris-clair);
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-animation: fadein 6s;
+          animation: fadein 6s;
+  background-color: var(--bleu-clair);
+}
+
+.contact button:hover {
+  background-color: var(--bleu);
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .liens {
@@ -107,7 +185,8 @@
 
 @media screen and (max-width: 768px) {
   .mainLeftPart {
-    width: 350px;
+    width: 50%;
+    padding-bottom: 100px;
   }
   .mainRightPart {
     -webkit-box-align: center;

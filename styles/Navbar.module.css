@@ -1,7 +1,7 @@
 .container {
   position: relative;
   z-index: 2;
-  margin: 80px auto 100px;
+  margin: 80px auto 50px;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
