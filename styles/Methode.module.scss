@@ -2,7 +2,7 @@
 
 .globalContainer {
 	height: auto;
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	padding: 30px;	
 	animation-duration: 1s;
@@ -26,16 +26,7 @@
 }
 
 
-@keyframes appear {
-	from {
-		 opacity: 0;
-		 transform: translateY(40px);
-	}
-	to {
-		 opacity: 1;
-		 transform: translateY(0);
-	}
-}
+
 
 .delimitation {
 	width: 80%;
@@ -48,7 +39,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -79,6 +70,65 @@
 	}
 }
 
+@media screen and (max-width: 1200px) {
+    .globalContainer {
+		 p {
+			font-size: 1.3rem;
+		 }
+	 }
+}
+
+@media screen and (max-width: 1024px) {
+	.globalContainer {
+		p {
+		  font-size: 1.1rem;
+		}
+	}
+	.firstCard {
+		flex-direction: column;
+		width: 100%;
+	}
+	 .text {
+		width: 80%;
+	}
+	.img {
+		width: 60%;
+	}
+	.bottomCard {
+		flex-direction: column;
+
+		div {
+			width: 60%;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	
+}
+
+@media screen and (max-width: 480px) {
+    
+	.globalContainer {
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
+
+	.img {
+		width: 90%;
+	}
+
+	.bottomCard {
+		div {
+			width: 90%;
+		}
+	}
+}
+
+
 // @media screen and (max-width: 1200px) {
     
 // }
@@ -94,3 +144,14 @@
 // @media screen and (max-width: 480px) {
     
 // }
+
+@keyframes appear {
+	from {
+		 opacity: 0;
+		 transform: translateY(40px);
+	}
+	to {
+		 opacity: 1;
+		 transform: translateY(0);
+	}
+}

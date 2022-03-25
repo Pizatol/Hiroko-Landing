@@ -3,8 +3,8 @@
   height: auto;
   margin-top: 200px;
   background-color: var(--gris-clair);
-  -webkit-animation-duration: .3s;
-          animation-duration: .3s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-name: appear;
           animation-name: appear;
 }
@@ -19,7 +19,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 300px;
+  padding: 100px;
 }
 
 .mainLeftPart {
@@ -109,11 +109,20 @@
   .mainLeftPart {
     width: 350px;
   }
+  .mainRightPart {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainRightPart h2 {
+    margin-top: 20px;
+  }
   .mainContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0px;
   }
 }
 
@@ -132,7 +141,7 @@
     font-size: 1rem;
   }
   .mainRightPart p {
-    font-size: .80rem;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=Home.module.css.map */
