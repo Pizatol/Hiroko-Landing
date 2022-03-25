@@ -5,21 +5,23 @@ import css from "../../styles/Slider.module.scss";
 
 
 
-import img1 from "../../public/assets/galeryImage/img1.JPG";
-import img2 from "../../public/assets/galeryImage/img2.JPG";
-import img3 from "../../public/assets/galeryImage/img3.JPG";
-import img4 from "../../public/assets/galeryImage/img4.JPG";
-import img5 from "../../public/assets/galeryImage/img5.JPG";
-import img6 from "../../public/assets/galeryImage/img6.JPG";
-import img7 from "../../public/assets/galeryImage/img7.JPG";
-import img8 from "../../public/assets/galeryImage/img8.JPG";
-import img9 from "../../public/assets/galeryImage/img9.JPG";
-import img10 from "../../public/assets/galeryImage/img10.JPG";
-import img11 from "../../public/assets/galeryImage/img11.JPG";
+import img1 from "../../public/assets/galeryImage/img1.jpg";
+import img2 from "../../public/assets/galeryImage/img2.jpg";
+import img3 from "../../public/assets/galeryImage/img3.jpg";
+import img4 from "../../public/assets/galeryImage/img4.jpg";
+import img5 from "../../public/assets/galeryImage/img5.jpg";
+import img6 from "../../public/assets/galeryImage/img6.jpg";
+import img7 from "../../public/assets/galeryImage/img7.jpg";
+import img8 from "../../public/assets/galeryImage/img8.jpg";
+import img9 from "../../public/assets/galeryImage/img9.jpg";
+import img10 from "../../public/assets/galeryImage/img10.jpg";
+import img11 from "../../public/assets/galeryImage/img11.jpg";
+
+
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { useDebugValue } from "react/cjs/react.production.min";
+// import { useDebugValue } from "react/cjs/react.production.min";
 
 export default function Slider(props) {
     //  const dataImg = [img1, img2, img3]
@@ -96,7 +98,6 @@ export default function Slider(props) {
     return (
         <div className={css.globalContainer}>
           
-{/* {`dataImg[${value}].id${-2}`} */}
             {appear && (
                 <>
                     <div
