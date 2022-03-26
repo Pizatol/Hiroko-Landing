@@ -2,10 +2,29 @@ import React from "react";
 import css from "../styles/Tarifs.module.scss";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import Image from 'next/image'
+
+import wallpaper from "../public/wallpaper.jpg";
 
 export default function Tarifs() {
     return (
         <div className={css.globalContainer}>
+
+
+<div className={css.wallpaper}>
+                    <Image
+                        src={wallpaper}
+                        width={2400}
+                        height={1590}
+                        alt="fond d'écran"
+                        // layout="responsive"
+                        layout="fixed"
+                        placeholder="blur"
+                    />
+                </div>
+
+
+
          <h4 className={css.cotisation}>
                     Frais de cotisation gratuits !
                 </h4>
@@ -19,6 +38,7 @@ export default function Tarifs() {
                         <div className={css.title}>
                             <h2>cours individuel</h2>
                             <h3> 40 € / cours</h3>
+                            <br />
                             <h4 className={css.tarifEtudiant}>
                                 
                                 10 cours : 350 €

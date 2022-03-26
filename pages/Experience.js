@@ -5,9 +5,23 @@ import Footer from "../components/Footer";
 
 import hirokoCours from "../public/assets/profil/hirokoCours.JPG";
 
+import wallpaper from "../public/wallpaper.jpg";
+
 export default function Experience() {
     return (
         <div className={css.globalContainer}>
+            <div className={css.wallpaper}>
+                <Image
+                    src={wallpaper}
+                    width={2400}
+                    height={1590}
+                    alt="fond d'écran"
+                    // layout="responsive"
+                    layout="fixed"
+                    placeholder="blur"
+                />
+            </div>
+
             <h1>Qui suis-je ? </h1>
             <section>
                 <div className={css.card}>
@@ -22,49 +36,52 @@ export default function Experience() {
                     </div>
                     <div className={css.right}>
                         <h4>
-                            Je m&apos;appelle Hiroko et je dispense des
-                            cours de langue japonaise depuis plus de 20 ans!
+                            Je m&apos;appelle Hiroko et je dispense des cours de
+                            langue japonaise depuis plus de 20 ans!
                         </h4>
                     </div>
                 </div>
 
                 <div className={css.cv}>
                     <p>
-						  👶🏻
-                        J&apos;enseigne à des enfants de l&apos;association DULALA, ils
-                        sont âgés de 3 à 7 ans. S&apos;amuser et enseigner est
-                        devenue une seconde nature chez moi! Riche de cette
-                        expérience, j&apos;utilise beaucoup de méthodes ludiques pour
-                        apprendre facilement.
+                        👶🏻 J&apos;enseigne à des enfants de l&apos;association
+                        DULALA, ils sont âgés de 3 à 7 ans. S&apos;amuser et
+                        enseigner est devenue une seconde nature chez moi! Riche
+                        de cette expérience, j&apos;utilise beaucoup de méthodes
+                        ludiques pour apprendre facilement.
                     </p>
 
+                    <p>👨🏻‍🎓 Je donne cours dans des écoles de tous horizons :</p>
+                    <ul>
+                        <li>IPAC (école de commerce)</li>
+                        <li>ISMAC (école de marketting / commerce)</li>
+                        <li>CEGI (école d&apos;ingénieur)</li>
+                        <li>CREAPOLE (école de design)</li>
+                        <li>
+                            GAMING CAMPUS ( école de développement et Marketting
+                            spécialisée dans les jeux vidéos)
+                        </li>
+                        <li>IIM (Institue Of Intern)</li>
+                        <li>...</li>
+                    </ul>
 
-						  <p>
-						  👨🏻‍🎓 Je donne  cours dans des écoles de tous  horizons :
-						  </p>
-						  <ul>
-							  <li>IPAC (école de commerce)</li>
-							  <li>ISMAC (école de marketting / commerce)</li>
-							  <li>CEGI (école d&apos;ingénieur)</li>
-							  <li>CREAPOLE (école de design)</li>
-							  <li>GAMING CAMPUS ( école de développement et Marketting spécialisée dans les jeux vidéos)</li>
-							  <li>IIM (Institue Of Intern)</li>
-							  <li>...</li>
-						  </ul>
-
-
-						
-
-							<p> 👩‍🏫 J&apos;enseigne également aux adultes, je construis mes cours en me basant sur les intérêts personnels de mes élèves.</p>
-							<ul>
-								<li>Mairie de Paris</li>
-								<li>Entreprises (Toyota Paris, L&apos;Oréal...)</li>
-								<li>Cours individuels (des élèves collégiens aux personnes retraitées)</li>
-							</ul>
-
+                    <p>
+                        {" "}
+                        👩‍🏫 J&apos;enseigne également aux adultes, je construis
+                        mes cours en me basant sur les intérêts personnels de
+                        mes élèves.
+                    </p>
+                    <ul>
+                        <li>Mairie de Paris</li>
+                        <li>Entreprises (Toyota Paris, L&apos;Oréal...)</li>
+                        <li>
+                            Cours individuels (des élèves collégiens aux
+                            personnes retraitées)
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </div>
     );
 }

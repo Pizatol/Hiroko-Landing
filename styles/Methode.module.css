@@ -57,7 +57,8 @@
   margin: 150px auto;
   width: 80%;
   padding-top: 80px;
-  background-color: var(--gris);
+  background-color: var(--gris-clair);
+  border: 1px solid var(--gris);
   border-radius: 5px;
   overflow: hidden;
   text-align: center;

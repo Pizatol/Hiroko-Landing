@@ -21,6 +21,7 @@ export default function Home() {
             </Head>
 
             <main className={css.mainContainer}>
+            
                 <div className={css.wallpaper}>
                     <Image
                         src={wallpaper}

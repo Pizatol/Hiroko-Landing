@@ -13,6 +13,11 @@
         margin-bottom: 50px;
     }
 }
+
+
+
+
+
 .mainTitle {
     font-family: var(--title);
     font-size: 2.5rem;
@@ -54,7 +59,8 @@
 	margin: 150px auto;
 	width: 80%;
     padding-top: 80px;
-	background-color: var(--gris);	
+	background-color: var(--gris-clair);	
+    border: 1px solid var(--gris);
 	border-radius: 5px;
 	overflow: hidden;
     text-align: center;
@@ -91,6 +97,9 @@
         border-radius: 5px;
     }
 }
+
+
+
 
 @media screen and (max-width: 1200px) {
     .globalContainer {

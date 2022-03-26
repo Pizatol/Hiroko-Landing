@@ -2,6 +2,7 @@ import React from "react";
 import css from "../styles/Methode.module.scss";
 
 import Image from "next/image";
+import wallpaper from "../public/wallpaper.jpg";
 import book from "../public/assets/methode/book.jpg";
 import cook from "../public/assets/methode/cook.jpg";
 import tea from "../public/assets/methode/tea.jpg";
@@ -39,35 +40,34 @@ export default function Methode() {
                         J&apos;organise des sorties pour faire découvrir la
                         culture japonaise !
                     </h1>
-                        <ul>
-                            <li>Cérémonie du thé,</li>
-                            <li>Cinéma japonais,</li>
-                            <li>Pique niques,</li>
-                            <li>Cours de cuisine japonaise</li>
-                            <li>...</li>
-                        </ul>
-                        <div className={css.bottomCard}>
-                    <div>
-                        <Image
-                            src={tea}
-                            width={1920}
-                            height={1282}
-                            alt="cérémonie du thé"
-                            layout="responsive"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src={cook}
-                            width={1920}
-                            height={1282}
-                            alt="cuisine"
-                            layout="responsive"
-                        />
+                    <ul>
+                        <li>Cérémonie du thé,</li>
+                        <li>Cinéma japonais,</li>
+                        <li>Pique niques,</li>
+                        <li>Cours de cuisine japonaise</li>
+                        <li>...</li>
+                    </ul>
+                    <div className={css.bottomCard}>
+                        <div>
+                            <Image
+                                src={tea}
+                                width={1920}
+                                height={1282}
+                                alt="cérémonie du thé"
+                                layout="responsive"
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                src={cook}
+                                width={1920}
+                                height={1282}
+                                alt="cuisine"
+                                layout="responsive"
+                            />
+                        </div>
                     </div>
                 </div>
-                </div>
-               
             </div>
         </>
     );

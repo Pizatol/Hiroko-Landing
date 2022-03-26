@@ -10,16 +10,18 @@
 
 .mainContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 50px;
     height: 700px;
-  
 }
+
+//  ********** WALLPAPER
+
 .wallpaper {
     position: absolute;
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     top: 0;
     z-index: -1;
     overflow: hidden;
@@ -43,7 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 100px;
+    // margin-left: 100px;
     color: var(--black);
 
     h2 {
@@ -70,13 +72,10 @@
 }
 
 .title1 {
-    
-    animation : fadein 2s;
-  
+    animation: fadein 2s;
 }
 .title2 {
     animation: fadein 3s;
-    
 }
 
 //  ******** RENDEZ VOUS BUTTON
@@ -86,25 +85,33 @@
     text-align: center;
 
     button {
-        font-family: var(--standard);
+        font-family: var(--title);
         font-size: 2rem;
-        color: var(--gris-clair);
+        color: var(--black);
         padding: 15px 25px;
         border: none;
         outline: none;
         border-radius: 5px;
         outline: none;
-        transition: all .4s ease;
-        animation : fadein 6s;
-        background-color: var(--bleu-clair);
+        transition: all 0.4s ease;
+        animation: fadein 6s;
+        // background-color: var(--rose);
+        background-color: var(--rose);
+        box-shadow: 0 0 0 0 #ea80fc;
+        animation: pulse 1.5s infinite;
     }
 
     button:hover {
-        background-color: var(--bleu);
+        background-color: var(--rose);
+        transform: scale(1.05);
     }
 }
 
-
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 18px rgba(254, 155, 254, 0.01);
+    }
+}
 
 @keyframes fadein {
     0% {
@@ -113,14 +120,11 @@
     50% {
         opacity: 0;
     }
-   
+
     100% {
         opacity: 1;
     }
 }
-
-
-
 
 .liens {
     margin-top: 60px;
@@ -154,8 +158,14 @@
 @media screen and (max-width: 768px) {
     .mainLeftPart {
         width: 50%;
-        padding-bottom: 100px;
+      border-radius: 0;
+        // margin: 50px 0;
+        padding-top: 100px;
+        overflow: visible;
     }
+
+  
+
     .mainRightPart {
         align-items: center;
 
@@ -166,23 +176,46 @@
 
     .mainContainer {
         flex-direction: column;
-        padding: 0px;
+        padding: 10px;
+    }
+
+    .contact {
+
+        padding-top: 100px;
+        button {
+            font-size: 1rem;
+        }
     }
 }
 @media screen and (max-width: 480px) {
+
+
+
+    .mainContainer {
+        margin: 0 20px;
+    }
+
+    .mainLeftPart {
+        padding-top: 0px;
+    }
+
     .mainRightPart {
         align-items: center;
         text-align: center;
         width: 380px;
+        
 
         h2 {
             font-size: 2rem;
         }
         h3 {
             font-size: 1rem;
+            margin: 10px 10px;
         }
         p {
             font-size: 0.8rem;
+            margin: 0 10px;
+            
         }
     }
 }

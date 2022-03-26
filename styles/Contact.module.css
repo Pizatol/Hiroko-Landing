@@ -11,7 +11,7 @@
   text-align: center;
   font-family: var(--title);
   font-size: 2rem;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 @-webkit-keyframes appear {
@@ -38,6 +38,16 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+.wallpaper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.35;
 }
 
 .rightPart {
@@ -150,6 +160,10 @@
   -webkit-box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
   background-color: var(--bleu);
+}
+
+.span {
+  color: orangered;
 }
 
 @media screen and (max-width: 480px) {
