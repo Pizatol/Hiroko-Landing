@@ -54,7 +54,7 @@ export default function Home() {
                         </h3>
                         <p>
                             Je vous propose d&apos;apprendre la langue japonaise
-                            par petits groupes dans le cadre d&apos;un méthode
+                            par petits groupes dans le cadre d&apos;une méthode
                             ludique mettant en avant la pratique par la
                             conversation. Avec mon expérience de plus de 20 ans
                             en tant que professeur, vous êtes certains de
