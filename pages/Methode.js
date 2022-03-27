@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 
 import Image from "next/image";
 
-// import feuille from "../public/assets/Methode/feuille.jpg";
-// import glace from "../public/assets/Methode/glace.jpg";
-// import soupe from "../public/assets/Methode/soupe.jpg";
+import feuille from "../public/assets/Methode/feuille.jpg";
+import glace from "../public/assets/Methode/glace.jpg";
+import soupe from "../public/assets/Methode/soupe.jpg";
 
 export default function Methode() {
     return (
@@ -28,7 +28,8 @@ export default function Methode() {
                     </div>
                     <div className={css.img}>
                         <Image
-                            src={"/../public/assets/Methode/feuille.jpg"}
+                            // src={"/../public/assets/Methode/feuille.jpg"}
+                            src={feuille}
                             width={960}
                             height={640}
                             alt="carré origami japonais"
@@ -51,7 +52,8 @@ export default function Methode() {
                     <div className={css.bottomCard}>
                         <div>
                             <Image
-                                src={"/../public/assets/Methode/glace.jpg"}
+                                // src={"/../public/assets/Methode/glace.jpg"}
+                                src={glace}
                                 width={3072}
                                 height={2304}
                                 alt="cérémonie du thé"
@@ -60,7 +62,8 @@ export default function Methode() {
                         </div>
                         <div>
                             <Image
-                                src={"/../public/assets/Methode/soupe.jpg"}
+                                // src={"/../public/assets/Methode/soupe.jpg"}
+                                src={soupe}
                                 width={3072}
                                 height={2304}
                                 alt="cuisine"
