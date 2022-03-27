@@ -8,8 +8,7 @@ import feuille from '../public/assets/methode/feuille.jpg'
 import glace from '../public/assets/methode/glace.jpg'
 import soupe from '../public/assets/methode/soupe.jpg'
 
-import cook from "../public/assets/methode/cook.jpg";
-import tea from "../public/assets/methode/tea.jpg";
+
 
 export default function Methode() {
     return (
