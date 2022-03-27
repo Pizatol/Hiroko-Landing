@@ -4,11 +4,9 @@ import Footer from "../components/Footer";
 
 import Image from "next/image";
 
-import feuille from '../public/assets/methode/feuille.jpg'
-import glace from '../public/assets/methode/glace.jpg'
-import soupe from '../public/assets/methode/soupe.jpg'
-
-
+import feuille from "../public/assets/Methode/feuille.jpg";
+import glace from "../public/assets/Methode/glace.jpg";
+import soupe from "../public/assets/Methode/soupe.jpg";
 
 export default function Methode() {
     return (
@@ -72,8 +70,8 @@ export default function Methode() {
                     </div>
                 </div>
             </div>
-            <Footer/>
-                    </>
+            <Footer />
+        </>
     );
 }
 
