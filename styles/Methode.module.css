@@ -94,8 +94,8 @@
 }
 
 .bottomCard div {
-  width: 50%;
-  height: 300px;
+  width: 30%;
+  height: auto;
   overflow: hidden;
   margin: 0 30px;
   border-radius: 5px;
@@ -131,7 +131,7 @@
             flex-direction: column;
   }
   .bottomCard div {
-    width: 60%;
+    width: 90%;
     margin-bottom: 20px;
   }
 }

@@ -10,17 +10,16 @@ import wallpaper from "../public/wallpaper.jpg";
 export default function Experience() {
     return (
         <div className={css.globalContainer}>
-            <div className={css.wallpaper}>
+            {/* <div className={css.wallpaper}>
                 <Image
                     src={wallpaper}
                     width={2400}
                     height={1590}
                     alt="fond d'écran"
-                    // layout="responsive"
-                    layout="fixed"
-                    placeholder="blur"
+                    layout="responsive"
+                   
                 />
-            </div>
+            </div> */}
 
             <h1>Qui suis-je ? </h1>
             <section>
@@ -61,7 +60,7 @@ export default function Experience() {
                             GAMING CAMPUS ( école de développement et Marketting
                             spécialisée dans les jeux vidéos)
                         </li>
-                        <li>IIM (Institue Of Intern)</li>
+                        
                         <li>...</li>
                     </ul>
 
@@ -73,7 +72,7 @@ export default function Experience() {
                     </p>
                     <ul>
                         <li>Mairie de Paris</li>
-                        <li>Entreprises (Toyota Paris, L&apos;Oréal...)</li>
+                        <li>Entreprises (Toyota Paris, L&apos;Oréal, Clive Christian Paris, Louis Vuitton, Morgan Stanley ... )</li>
                         <li>
                             Cours individuels (des élèves collégiens aux
                             personnes retraitées)

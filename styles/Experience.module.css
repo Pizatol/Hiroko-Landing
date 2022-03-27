@@ -68,7 +68,7 @@
 .left {
   border-radius: 5px;
   overflow: hidden;
-  width: 40%;
+  width: 30%;
   height: auto;
 }
 
@@ -116,7 +116,7 @@
             flex-direction: column;
   }
   .left {
-    width: 70%;
+    width: 50%;
   }
   .right {
     width: 80%;
@@ -137,7 +137,7 @@
             flex-direction: column;
   }
   .left {
-    width: 100%;
+    width: 50%;
   }
   .right {
     width: 100%;
