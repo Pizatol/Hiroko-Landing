@@ -28,7 +28,7 @@ export default function Methode() {
                     </div>
                     <div className={css.img}>
                         <Image
-                            // src={"/../public/assets/Methode/feuille.jpg"}
+                           
                             src={feuille}
                             width={960}
                             height={640}
@@ -52,7 +52,7 @@ export default function Methode() {
                     <div className={css.bottomCard}>
                         <div>
                             <Image
-                                // src={"/../public/assets/Methode/glace.jpg"}
+                               
                                 src={glace}
                                 width={3072}
                                 height={2304}
@@ -62,7 +62,7 @@ export default function Methode() {
                         </div>
                         <div>
                             <Image
-                                // src={"/../public/assets/Methode/soupe.jpg"}
+                              
                                 src={soupe}
                                 width={3072}
                                 height={2304}
