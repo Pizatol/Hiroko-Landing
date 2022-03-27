@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 
 import Image from "next/image";
 
-import feuille from "../public/assets/profil/feuille.jpg";
-import glace from "../public/assets/profil/glace.jpg";
-import soupe from "../public/assets/profil/soupe.jpg";
+import feuille from "../public/assets/profil/feuille.JPG";
+import glace from "../public/assets/profil/glace.JPG";
+import soupe from "../public/assets/profil/soupe.JPG";
 
 export default function Methode() {
     return (
@@ -29,7 +29,7 @@ export default function Methode() {
                     <div className={css.img}>
                         <Image
                            
-                            src={feuille}
+                            src="/../public/assets/profil/feuille.JPG"
                             width={960}
                             height={640}
                             alt="carré origami japonais"
@@ -53,17 +53,19 @@ export default function Methode() {
                         <div>
                             <Image
                                
-                                src={glace}
+                                src="/../public/assets/profil/glace.JPG"
                                 width={3072}
                                 height={2304}
-                                alt="cérémonie du thé"
+                                alt="glace japonaise"
                                 layout="responsive"
+                               
+                               
                             />
                         </div>
                         <div>
                             <Image
                               
-                                src={soupe}
+                                src="/../public/assets/profil/soupe.JPG"
                                 width={3072}
                                 height={2304}
                                 alt="cuisine"
