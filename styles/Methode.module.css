@@ -94,10 +94,10 @@
 }
 
 .bottomCard div {
-  width: 30%;
+  width: 33%;
   height: auto;
   overflow: hidden;
-  margin: 0 30px;
+  margin: 0 10px;
   border-radius: 5px;
 }
 
@@ -131,8 +131,9 @@
             flex-direction: column;
   }
   .bottomCard div {
-    width: 90%;
+    width: 70%;
     margin-bottom: 20px;
+    height: auto;
   }
 }
 
