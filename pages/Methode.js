@@ -1,9 +1,13 @@
 import React from "react";
 import css from "../styles/Methode.module.scss";
+import Footer from "../components/Footer";
 
 import Image from "next/image";
-import wallpaper from "../public/wallpaper.jpg";
-import book from "../public/assets/methode/book.jpg";
+
+import feuille from '../public/assets/methode/feuille.jpg'
+import glace from '../public/assets/methode/glace.jpg'
+import soupe from '../public/assets/methode/soupe.jpg'
+
 import cook from "../public/assets/methode/cook.jpg";
 import tea from "../public/assets/methode/tea.jpg";
 
@@ -27,10 +31,10 @@ export default function Methode() {
                     </div>
                     <div className={css.img}>
                         <Image
-                            src={book}
-                            width={3264}
-                            height={2448}
-                            alt="image livre japonais"
+                            src={feuille}
+                            width={960}
+                            height={640}
+                            alt="carré origami japonais"
                             layout="responsive"
                         />
                     </div>
@@ -50,18 +54,18 @@ export default function Methode() {
                     <div className={css.bottomCard}>
                         <div>
                             <Image
-                                src={tea}
-                                width={1920}
-                                height={1282}
+                                src={glace}
+                                width={3072}
+                                height={2304}
                                 alt="cérémonie du thé"
                                 layout="responsive"
                             />
                         </div>
                         <div>
                             <Image
-                                src={cook}
-                                width={1920}
-                                height={1282}
+                                src={soupe}
+                                width={3072}
+                                height={2304}
                                 alt="cuisine"
                                 layout="responsive"
                             />
@@ -69,7 +73,8 @@ export default function Methode() {
                     </div>
                 </div>
             </div>
-        </>
+            <Footer/>
+                    </>
     );
 }
 
