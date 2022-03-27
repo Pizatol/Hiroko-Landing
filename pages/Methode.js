@@ -29,7 +29,7 @@ export default function Methode() {
                     <div className={css.img}>
                         <Image
                            
-                            src="/../public/assets/profil/feuille.JPG"
+                            src="/assets/profil/feuille.JPG"
                             width={960}
                             height={640}
                             alt="carré origami japonais"
@@ -53,7 +53,7 @@ export default function Methode() {
                         <div>
                             <Image
                                
-                                src="/../public/assets/profil/glace.JPG"
+                                src="/assets/profil/glace.JPG"
                                 width={3072}
                                 height={2304}
                                 alt="glace japonaise"
@@ -65,7 +65,7 @@ export default function Methode() {
                         <div>
                             <Image
                               
-                                src="/../public/assets/profil/soupe.JPG"
+                                src="/assets/profil/soupe.JPG"
                                 width={3072}
                                 height={2304}
                                 alt="cuisine"
