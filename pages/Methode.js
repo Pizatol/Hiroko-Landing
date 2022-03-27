@@ -29,7 +29,7 @@ export default function Methode() {
                     <div className={css.img}>
                         <Image
                            
-                            src="/assets/profil/methode.JPG"
+                            src="/assets/profil/methode.jpg"
                             width={5184}
                             height={3456}
                             alt="méthode ludique"
