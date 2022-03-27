@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 
 import hiroko from "../public/assets/profil/hiro.jpg";
 import wallpaper from "../public/wallpaper.jpg";
+import portrait from '../public/assets/profil/portrait.jpg'
 
 export default function Home() {
     return (
@@ -36,9 +37,9 @@ export default function Home() {
 
                 <div className={css.mainLeftPart}>
                     <Image
-                        src={hiroko}
-                        width={400}
-                        height={400}
+                        src={portrait}
+                        width={651}
+                        height={651}
                         alt="image profil Hiroko"
                     />
                 </div>
