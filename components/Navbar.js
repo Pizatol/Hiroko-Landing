@@ -44,9 +44,6 @@ export default function Navbar({ children }) {
 
                 <div className={css.right}>
                     <div className={css.links}>
-                        {/* <Link href="/">
-                    <a className={css.lien}>Horaire</a>
-                </Link> */}
                         <Link href="/Methode">
                             <a className={css.lien}>Méthode</a>
                         </Link>
@@ -56,9 +53,7 @@ export default function Navbar({ children }) {
                         <Link href="/Experience">
                             <a className={css.lien}>Expérience</a>
                         </Link>
-                        {/* <Link href="/Galerie">
-                            <a className={css.lien}>Galerie</a>
-                        </Link> */}
+
                         <Link href="/Contact">
                             <a className={css.lien}>Contact</a>
                         </Link>
