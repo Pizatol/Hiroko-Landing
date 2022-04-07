@@ -103,13 +103,13 @@
 }
 
 	.left {
-		width: 50%;
+		width: 70%;
 	}
 
 
     .right {
 
-		width: 80%;
+		width: 100%;
 
 		 h4 {
 			 font-size: 1rem;
@@ -129,13 +129,17 @@
 	}
 
     .left {
-		 width: 50%;
+		 width: 70%;
 	 }
 	 .right {
 		 width: 100%;
 	 }
 }
-
+@media screen and (max-width: 480px) {
+	.left {
+		width: 100%;
+	}
+}
 
 // @media screen and (max-width: 1200px) {
     
