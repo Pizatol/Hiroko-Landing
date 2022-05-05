@@ -45,7 +45,7 @@ export default function Home() {
                 </div>
 
                 <div className={css.mainRightPart}>
-                    <h2 className={css.title1}>Konnichiwa !</h2>
+                    <h2 className={css.title1}>Konnichiwa !!</h2>
                     <h2 className={css.title2}>こんにちは !</h2>
                     <div>
                         <h3>
