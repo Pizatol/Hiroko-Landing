@@ -2,17 +2,17 @@ import React from "react";
 import css from "../styles/Methode.module.scss";
 import Footer from "../components/Footer";
 
+
+
 import Image from "next/image";
 
-// import feuille from "../public/assets/profil/feuille.JPG";
-// import glace from "../public/assets/profil/glace.JPG";
-// import soupe from "../public/assets/profil/soupe.JPG";
+import teacher from '../public/assets/dessins/job_sensei.png'
 
 export default function Methode() {
     return (
         <>
             <div className={css.globalContainer}>
-                <h1 className={css.mainTitle}>Méthode personnelle</h1>
+                <h1 className={css.mainTitle}>Méthode personnalisée</h1>
                 <div className={css.delimitation}></div>
                 <div className={css.firstCard}>
                     <div className={css.text}>
@@ -28,7 +28,6 @@ export default function Methode() {
                     </div>
                     <div className={css.img}>
                         <Image
-                           
                             src="/assets/profil/methode.jpg"
                             width={5184}
                             height={3456}
@@ -36,8 +35,35 @@ export default function Methode() {
                             layout="responsive"
                         />
                     </div>
+
+
+          {/* DESSIN PROFESSEUR */}
+
+          <div className={css.dessin_teacher_container}>
+                    <div className={css.dessin_teacher_img}>
+                        <Image 
+                            src={teacher}
+                            width={197}
+                            height={300}
+                            alt="dessin professeur"
+                            // layout="responsive"
+                        />
+                    </div>
                 </div>
+
+
+                </div>
+
+              
+
+
                 <div className={css.middlePart}>
+
+
+            
+
+
+
                     <h1>
                         J&apos;organise des sorties pour faire découvrir la
                         culture japonaise !
@@ -52,19 +78,15 @@ export default function Methode() {
                     <div className={css.bottomCard}>
                         <div>
                             <Image
-                               
                                 src="/assets/profil/glace.JPG"
                                 width={3072}
                                 height={2304}
                                 alt="glace japonaise"
                                 layout="responsive"
-                               
-                               
                             />
                         </div>
                         <div>
                             <Image
-                              
                                 src="/assets/profil/groupe.jpg"
                                 width={639}
                                 height={426}
@@ -74,7 +96,6 @@ export default function Methode() {
                         </div>
                         <div>
                             <Image
-                              
                                 src="/assets/profil/soupe.JPG"
                                 width={3072}
                                 height={2304}
@@ -82,7 +103,6 @@ export default function Methode() {
                                 layout="responsive"
                             />
                         </div>
-                        
                     </div>
                 </div>
             </div>

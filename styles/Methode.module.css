@@ -30,6 +30,7 @@
 }
 
 .firstCard {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,12 +54,46 @@
   overflow: hidden;
 }
 
+.dessin_teacher_container {
+  position: absolute;
+  left: 10px;
+  top: 650px;
+  -webkit-animation: moove 5s ease-in-out;
+          animation: moove 5s ease-in-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moove {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-330px);
+            transform: translateY(-330px);
+  }
+}
+
+@keyframes moove {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-330px);
+            transform: translateY(-330px);
+  }
+}
+
 .middlePart {
+  position: relative;
   margin: 150px auto;
   width: 80%;
   padding-top: 80px;
   background-color: var(--gris-clair);
-  border: 1px solid var(--gris);
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
@@ -104,6 +139,9 @@
 @media screen and (max-width: 1200px) {
   .globalContainer p {
     font-size: 1.3rem;
+  }
+  .dessin_teacher_container {
+    display: none;
   }
 }
 

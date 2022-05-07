@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { init } from "@emailjs/browser";
 
 import wallpaper from "../public/wallpaper.jpg";
+import rabbit from '../public/assets/dessins/rabbit_mail.png'
 
 export default function Contact() {
     const form = useRef();
@@ -72,7 +73,26 @@ export default function Contact() {
 
     return (
         <div className={css.globalContainer}>
-            <div className={css.wallpaper}>
+
+
+        {/* RABIIT MAIL */}
+
+            <div className={css.rabbit_container} > 
+                <div className={css.rabbit_card}>
+                    <div className={css.rabbit_img}>
+                        <Image
+                        src={rabbit}
+                        width={200}
+                        height={200}
+                        alt="rabbit mail"
+                         />
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            {/* <div className={css.wallpaper}>
                 <Image
                     src={wallpaper}
                     width={2400}
@@ -82,7 +102,7 @@ export default function Contact() {
                     layout="fixed"
                     placeholder="blur"
                 />
-            </div>
+            </div> */}
 
             <div className={css.title}>
                 <h1>Contactez moi !</h1>

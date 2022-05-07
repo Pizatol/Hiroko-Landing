@@ -37,6 +37,7 @@
 	// ****** FIRST PART
 
 .firstCard {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -53,14 +54,41 @@
     border-radius: 10px;
     overflow: hidden;
 }
+
+
+
+// ****** DESSIN TEACHER
+
+.dessin_teacher_container {
+
+    position: absolute;     
+    left: 10px;
+    top: 650px;  
+    animation: moove 5s ease-in-out;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moove {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-330px);
+    }
+}
+
+// dessin livre 
+
 // *********** MIDDLE PART
 
 .middlePart {
+    position: relative;
 	margin: 150px auto;
 	width: 80%;
     padding-top: 80px;
 	background-color: var(--gris-clair);	
-    border: 1px solid var(--gris);
+    // border: 1px solid var(--gris);
 	border-radius: 5px;
 	overflow: hidden;
     text-align: center;
@@ -106,6 +134,9 @@
             font-size: 1.3rem;
         }
     }
+    .dessin_teacher_container {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -133,6 +164,7 @@
             height: auto;
         }
     }
+    
 }
 
 @media screen and (max-width: 768px) {
