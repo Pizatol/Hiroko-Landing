@@ -2,6 +2,7 @@
     position: relative;
     animation-duration: 0.4s;
     animation-name: appear;
+    max-height: 1600px;
 }
 @keyframes appear {
     from {
@@ -14,18 +15,88 @@
     }
 }
 
+// ***** ANIME BOY
 
-// ****** WALLPAPER
-
-.wallpaper {
+.boy_container {
     position: absolute;
-    width: 100%;
-    height: 150vh;
-    top: 0;
-    z-index: -1;
-    overflow: hidden;
-    opacity: 0.35;
+    right: 15%;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+.cotisation_txt {
+    position: relative;
+}
+.bubble_txt {
+    position: relative;
+    z-index: 5;
+    margin-left: 40px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+     justify-content: center;
+    width: 150px;
+    height: 150px;
+    font-family: var(--text);
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #fcc500;
+    // border: 1px solid orangered;
+    border-radius: 30px;
+    animation: floating 4s ease-in-out infinite;   
+}
+
+@keyframes floating {
+    0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-20px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+}
+
+
+.bg_txt {
+    position: absolute;
+    z-index: 4;
+    top: 40px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    // border: 1px solid #c59a00;
+    background-color: #ffc80081;
+    opacity: .8;
+    border-radius: 30px;
+    animation: floating2 4s ease-in-out infinite;   
+}
+@keyframes floating2 {
+    0% {
+        line-height: 30px;
+        transform: translateY(0px);
+      }
+      55% {
+        transform: translateY(-20px);
+      }
+      60% {
+        line-height: 10px;
+      }
+      100% {
+        line-height: 30px;
+        transform: translateY(0px);
+      }
+}
+
+
+
+// CARD
+
+
 
 .container {
     padding: 100px 0;
@@ -34,6 +105,7 @@
 }
 
 .cardContainer {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +134,8 @@
     height: 600px;
     margin: 10px;
     // border: 1px solid var(--bleu);
-    border-radius: 5px;
+    border-radius: 15px;
+    overflow: hidden;
     box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
     transition: all 0.4s ease;
 }
@@ -79,15 +152,15 @@
     transform: scale(1.04);
 }
 
-    // ******* ANIMATION
+// ******* ANIMATION
 .card {
-    animation : fadein 1s
+    animation: fadein 1s;
 }
 .card2 {
-    animation : fadein 1.5s
+    animation: fadein 1.5s;
 }
 .card3 {
-    animation : fadein 2s
+    animation: fadein 2s;
 }
 @keyframes fadein {
     0% {
@@ -132,7 +205,7 @@
     background-color: var(--orange);
 }
 .title3 {
-    background-color: #28A745;
+    background-color: #28a745;
 }
 .tarifEtudiant {
     font-size: 1rem;
@@ -175,7 +248,7 @@
     background-color: var(--orange);
 }
 .bottom3 {
-    background-color: #28A745 ;
+    background-color: #28a745;
     // background-color: var(--black) ;
 }
 
@@ -233,6 +306,9 @@
 
     .body {
         font-size: 1rem;
+    }
+    .boy_container {
+        height: 300px;
     }
 }
 

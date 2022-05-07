@@ -1,8 +1,9 @@
 .globalContainer {
     position: relative;
     width: 100%;
-    height: auto;
-    // margin-top: 200px;
+    max-width: 2400px;  
+    margin: auto;
+    height: auto;   
     background-color: transparent;
     animation-duration: 0.3s;
     animation-name: appear;

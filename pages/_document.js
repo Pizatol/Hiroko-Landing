@@ -23,6 +23,10 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
                         rel="stylesheet"
                     />
+                    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+
+                    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+
                 </Head>
                 <body>
                     <Main />

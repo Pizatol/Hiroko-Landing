@@ -2,35 +2,40 @@ import React from "react";
 import css from "../styles/Tarifs.module.scss";
 import Link from "next/link";
 import Footer from "../components/Footer";
-import Image from 'next/image'
+import Image from "next/image";
 
 import wallpaper from "../public/wallpaper.jpg";
+
+import money_boy from "../public/assets/dessins/money_one_coin.png";
+import tirelire from '../public/assets/dessins/money_kinbut.png'
 
 export default function Tarifs() {
     return (
         <div className={css.globalContainer}>
+           
 
+            {/* BOY WITH MONEY SAVED */}
 
-<div className={css.wallpaper}>
+            <div className={css.boy_container}>
+
+            
+                <div className={css.boy_img}>
                     <Image
-                        src={wallpaper}
-                        width={2400}
-                        height={1590}
-                        alt="fond d'écran"
-                        // layout="responsive"
-                        layout="fixed"
-                        placeholder="blur"
+                        src={tirelire}
+                        height={250}
+                        width={250}
+                        alt="boy with money saved"
                     />
                 </div>
+                <div className={css.cotisation_txt} >
+                    <p className={css.bubble_txt} >Frais de cotisation GRATUITS</p>   
+                    <div className={css.bg_txt}></div>                 
+                </div>
+                
+            </div>
 
-
-
-         <h4 className={css.cotisation}>
-                    Frais de cotisation gratuits !
-                </h4>
+            {/* <h4 className={css.cotisation}>Frais de cotisation gratuits !</h4> */}
             <div className={css.container}>
-               
-
                 <div className={css.cardContainer}>
                     {/* COURS INDIVIDUEL */}
 
@@ -40,7 +45,6 @@ export default function Tarifs() {
                             <h3> 40 € / cours</h3>
                             <br />
                             <h4 className={css.tarifEtudiant}>
-                                
                                 10 cours : 350 €
                             </h4>
                         </div>
@@ -67,7 +71,6 @@ export default function Tarifs() {
                             <span>(2-3 personnes)</span>
                             <h3> 25€ / cours</h3>
                             <h4 className={css.tarifEtudiant}>
-                                
                                 10 cours : 200 €
                             </h4>
                         </div>
@@ -93,7 +96,6 @@ export default function Tarifs() {
                             <span>(4-6 personnes)</span>
                             <h3> 15€ / cours</h3>
                             <h4 className={css.tarifEtudiant}>
-                                
                                 10 cours : 100 €
                             </h4>
                         </div>
@@ -113,16 +115,15 @@ export default function Tarifs() {
                 </div>
             </div>
 
-        <div className={css.downPage}>
-
-            <h3>
-
-                    Un cours dure une heure. Grâce à la taille réduite des groupes, nous pouvons progresser efficacement et encourager fortement la participation de chaque élève. 
-            </h3>
-            <h4>Règlements autorisés : chèque et virements bancaires</h4>
-             
-        </div>
-        <Footer/>
+            <div className={css.downPage}>
+                <h3>
+                    Un cours dure une heure. Grâce à la taille réduite des
+                    groupes, nous pouvons progresser efficacement et encourager
+                    fortement la participation de chaque élève.
+                </h3>
+                <h4>Règlements autorisés : chèque et virements bancaires</h4>
+            </div>
+            <Footer />
         </div>
     );
 }

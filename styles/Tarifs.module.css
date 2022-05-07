@@ -4,6 +4,7 @@
           animation-duration: 0.4s;
   -webkit-animation-name: appear;
           animation-name: appear;
+  max-height: 1600px;
 }
 
 @-webkit-keyframes appear {
@@ -32,14 +33,132 @@
   }
 }
 
-.wallpaper {
+.boy_container {
   position: absolute;
-  width: 100%;
-  height: 150vh;
-  top: 0;
-  z-index: -1;
-  overflow: hidden;
-  opacity: 0.35;
+  right: 15%;
+  top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cotisation_txt {
+  position: relative;
+}
+
+.bubble_txt {
+  position: relative;
+  z-index: 5;
+  margin-left: 40px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 150px;
+  font-family: var(--text);
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #fcc500;
+  border-radius: 30px;
+  -webkit-animation: floating 4s ease-in-out infinite;
+          animation: floating 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+.bg_txt {
+  position: absolute;
+  z-index: 4;
+  top: 40px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  background-color: #ffc80081;
+  opacity: .8;
+  border-radius: 30px;
+  -webkit-animation: floating2 4s ease-in-out infinite;
+          animation: floating2 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes floating2 {
+  0% {
+    line-height: 30px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  55% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  60% {
+    line-height: 10px;
+  }
+  100% {
+    line-height: 30px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes floating2 {
+  0% {
+    line-height: 30px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  55% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  60% {
+    line-height: 10px;
+  }
+  100% {
+    line-height: 30px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .container {
@@ -49,6 +168,7 @@
 }
 
 .cardContainer {
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +213,8 @@
   width: 350px;
   height: 600px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
+  overflow: hidden;
   -webkit-box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.4s ease;
@@ -194,7 +315,7 @@
 }
 
 .title3 {
-  background-color: #28A745;
+  background-color: #28a745;
 }
 
 .tarifEtudiant {
@@ -254,7 +375,7 @@
 }
 
 .bottom3 {
-  background-color: #28A745;
+  background-color: #28a745;
 }
 
 .downPage {
@@ -306,6 +427,9 @@
   }
   .body {
     font-size: 1rem;
+  }
+  .boy_container {
+    height: 300px;
   }
 }
 /*# sourceMappingURL=Tarifs.module.css.map */

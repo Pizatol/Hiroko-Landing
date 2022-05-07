@@ -1,6 +1,8 @@
 .globalContainer {
   position: relative;
   width: 100%;
+  max-width: 2400px;
+  margin: auto;
   height: auto;
   background-color: transparent;
   -webkit-animation-duration: 0.3s;
