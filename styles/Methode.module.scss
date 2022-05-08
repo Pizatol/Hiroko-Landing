@@ -39,8 +39,9 @@
 .firstCard {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
+    // border: 1px solid red;
     width: 70%;
     margin: auto;
 }
@@ -53,28 +54,56 @@
 .img {
     border-radius: 10px;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 
+// DESSIN CONTAINER
+
+.container_dessins {
+    display:flex;
+    align-items: center;
+     justify-content: space-around;
+}
+
+// ****** DESSIN ELEVE AVEC LIVRE
+
+.student_reading_book_container {
+    // position: absolute;
+  
+    width: 150px;
+    overflow: hidden;
+}
+
+// DESSIN RPG
+.rpg_container {
+    width: 300px;
+}
 
 // ****** DESSIN TEACHER
 
 .dessin_teacher_container {
 
-    position: absolute;     
+    position: absolute;  
+ 
     left: 10px;
-    top: 650px;  
-    animation: moove 5s ease-in-out;
-    animation-delay: 3s;
+    top: -405px;  
+   
+    overflow: hidden;
+}
+.dessin_teacher_img {
+    transform: translateY(330px);
+    animation: moove 4s ease-in-out;
+    // animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes moove {
     0% {
-        transform: translateY(0);
+        transform: translateY(330px);
     }
     100% {
-        transform: translateY(-330px);
+        transform: translateY(0);
     }
 }
 
@@ -84,7 +113,7 @@
 
 .middlePart {
     position: relative;
-	margin: 150px auto;
+	margin: 50px auto;
 	width: 80%;
     padding-top: 80px;
 	background-color: var(--gris-clair);	

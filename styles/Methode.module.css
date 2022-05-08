@@ -34,9 +34,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 70%;
@@ -52,45 +52,70 @@
 .img {
   border-radius: 10px;
   overflow: hidden;
+  margin-top: 20px;
+}
+
+.container_dessins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.student_reading_book_container {
+  width: 150px;
+  overflow: hidden;
+}
+
+.rpg_container {
+  width: 300px;
 }
 
 .dessin_teacher_container {
   position: absolute;
   left: 10px;
-  top: 650px;
-  -webkit-animation: moove 5s ease-in-out;
-          animation: moove 5s ease-in-out;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  top: -405px;
+  overflow: hidden;
+}
+
+.dessin_teacher_img {
+  -webkit-transform: translateY(330px);
+          transform: translateY(330px);
+  -webkit-animation: moove 4s ease-in-out;
+          animation: moove 4s ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes moove {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(330px);
+            transform: translateY(330px);
   }
   100% {
-    -webkit-transform: translateY(-330px);
-            transform: translateY(-330px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes moove {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(330px);
+            transform: translateY(330px);
   }
   100% {
-    -webkit-transform: translateY(-330px);
-            transform: translateY(-330px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 .middlePart {
   position: relative;
-  margin: 150px auto;
+  margin: 50px auto;
   width: 80%;
   padding-top: 80px;
   background-color: var(--gris-clair);
