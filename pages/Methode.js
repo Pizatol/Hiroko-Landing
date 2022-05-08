@@ -21,11 +21,42 @@ export default function Methode() {
     const img_soupe = useRef(null);
     const img_group = useRef(null)
 
+    const student_book = useRef(null)
+    const student_rpg = useRef(null)
+
     useEffect(() => {
 
+        // student book
+        gsap.fromTo(
+            student_book.current,
+            {  opacity : 0 },
+            {
+                scrollTrigger: {
+                    trigger: student_book.current,
+                 
+                    start : "top 70%",
+                },
+                opacity : 1,                
+                duration : 2
+            }
+        );
+        // students rpg
+        gsap.fromTo(
+            student_rpg.current,
+            {  opacity : 0 },
+            {
+                scrollTrigger: {
+                    trigger: student_rpg.current,
+                 
+                    start : "top 70%",
+                },
+                opacity : 1,                
+                duration : 2,
+                delay : .5
+            }
+        );
 
-
-
+        // glace
         gsap.fromTo(
             img_glace.current,
             { x: -100 , opacity : 0},
@@ -40,6 +71,7 @@ export default function Methode() {
                 duration : 1
             }
         );
+        // soupe
         gsap.fromTo(
             img_soupe.current,
             { x: 100 , opacity : 0},
@@ -54,6 +86,7 @@ export default function Methode() {
                 duration : 1
             }
         );
+        // groupe noir et blanc
          gsap.fromTo(
             img_group.current,
             { y : 100, opacity : 0 },
@@ -89,7 +122,7 @@ export default function Methode() {
 
                         {/* DESSIN ELEVE AVEC LIVRE */}
                         <div className={css.container_dessins}>
-                            <div className={css.student_reading_book_container}>
+                            <div ref={student_book} className={css.student_reading_book_container}>
                                 <Image
                                     src={student_reading_book}
                                     width={537}
@@ -99,7 +132,7 @@ export default function Methode() {
                                 />
                             </div>
 
-                            <div className={css.rpg_container}>
+                            <div ref={student_rpg} className={css.rpg_container}>
                                 <Image
                                     src={rpg_dessin}
                                     width={500}

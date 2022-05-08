@@ -2,8 +2,8 @@
   height: auto;
   width: 100%;
   margin: auto;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-name: appear;
           animation-name: appear;
 }
@@ -53,6 +53,32 @@
   border-radius: 10px;
   overflow: hidden;
   margin-top: 20px;
+  -webkit-animation: anim_img 2s cubic-bezier(0.43, -0.83, 0.53, 1.73);
+          animation: anim_img 2s cubic-bezier(0.43, -0.83, 0.53, 1.73);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes anim_img {
+  0% {
+    -webkit-transform: translateY(100px) scaleX(0.9);
+            transform: translateY(100px) scaleX(0.9);
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleX(1);
+            transform: translateY(0) scaleX(1);
+  }
+}
+
+@keyframes anim_img {
+  0% {
+    -webkit-transform: translateY(100px) scaleX(0.9);
+            transform: translateY(100px) scaleX(0.9);
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleX(1);
+            transform: translateY(0) scaleX(1);
+  }
 }
 
 .container_dessins {
@@ -64,6 +90,8 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 .student_reading_book_container {
@@ -85,8 +113,8 @@
 .dessin_teacher_img {
   -webkit-transform: translateY(330px);
           transform: translateY(330px);
-  -webkit-animation: moove 4s ease-in-out;
-          animation: moove 4s ease-in-out;
+  -webkit-animation: moove 10s ease-in-out;
+          animation: moove 10s ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -96,9 +124,17 @@
     -webkit-transform: translateY(330px);
             transform: translateY(330px);
   }
-  100% {
+  25% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(330px);
+            transform: translateY(330px);
   }
 }
 
@@ -107,9 +143,17 @@
     -webkit-transform: translateY(330px);
             transform: translateY(330px);
   }
-  100% {
+  25% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(330px);
+            transform: translateY(330px);
   }
 }
 
@@ -215,26 +259,18 @@
 @-webkit-keyframes appear {
   from {
     opacity: 0;
-    -webkit-transform: translateY(40px);
-            transform: translateY(40px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
 }
 
 @keyframes appear {
   from {
     opacity: 0;
-    -webkit-transform: translateY(40px);
-            transform: translateY(40px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=Methode.module.css.map */

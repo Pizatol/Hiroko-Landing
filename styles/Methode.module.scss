@@ -3,7 +3,7 @@
     width: 100%;
     margin: auto;
     // padding: 0 130px;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-name: appear;
 
     
@@ -55,6 +55,25 @@
     border-radius: 10px;
     overflow: hidden;
     margin-top: 20px;
+    // transform: translateY(100px);
+    animation: anim_img 2s cubic-bezier(.43,-0.83,.53,1.73) ;
+    animation-fill-mode: forwards;
+   
+}
+
+@keyframes anim_img {
+    0%{
+        transform: translateY(100px) scaleX(.9);
+        // transform: scaleX(.8);        
+    }
+    // 50% {
+    //     transform: translateY(-50px) scaleX(.7);
+    //     // transform: scaleX(1);
+    // }
+    
+    100% {
+        transform: translateY(0)  scaleX(1);
+    }
 }
 
 
@@ -64,6 +83,7 @@
     display:flex;
     align-items: center;
      justify-content: space-around;
+     transform: translateY(-30px);
 }
 
 // ****** DESSIN ELEVE AVEC LIVRE
@@ -93,7 +113,7 @@
 }
 .dessin_teacher_img {
     transform: translateY(330px);
-    animation: moove 4s ease-in-out;
+    animation: moove 10s ease-in-out;
     // animation-delay: 2s;
     animation-fill-mode: forwards;
 }
@@ -102,8 +122,14 @@
     0% {
         transform: translateY(330px);
     }
-    100% {
+    25% {
         transform: translateY(0);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(330px);
     }
 }
 
@@ -236,10 +262,10 @@
 @keyframes appear {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        // transform: translateY(40px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        // transform: translateY(0);
     }
 }
