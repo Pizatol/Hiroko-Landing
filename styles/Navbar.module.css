@@ -84,6 +84,7 @@
 .burger {
   display: none;
   position: relative;
+  z-index: 14;
 }
 
 .burger button {
@@ -100,8 +101,12 @@
 }
 
 .burgerLinks {
-  position: absolute;
-  left: -100px;
+  position: fixed;
+  z-index: 15;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--gris-clair);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

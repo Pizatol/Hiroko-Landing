@@ -49,7 +49,7 @@
     }
 }
 .right {
-    display: flex;    
+    display: flex;
 }
 .lien {
     margin: 0 10px;
@@ -64,27 +64,22 @@
 }
 
 .lien:hover {
-    background-color: var(--gris) ;  
-	 box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
- 
-   
+    background-color: var(--gris);
+    box-shadow: 0px 12px 25px -3px rgba(0, 0, 0, 0.5);
 }
 
-    // BURGER
-
+// BURGER
 
 .burger {
-    display: none;  
+    display: none;
     position: relative;
+    z-index: 14;
 
     button {
         border: none;
         background-color: var(--gris-clair);
         cursor: pointer;
- 
-       
     }
-
 }
 .burgerLine {
     width: 25px;
@@ -94,49 +89,55 @@
 }
 
 .burgerLinks {
-    position: absolute;
-    left: -100px;
+    position: fixed;
+    // left: -100px;
+    z-index: 15;
+    left: 0;
+    // top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--gris-clair);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: 0;
+    // display: none;    
     border: 1px solid black;
     border-radius: 5px;
     overflow: hidden;
     transform: translateY(10px);
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 
     a {
-  
-        text-align: center;     
+        text-align: center;
         display: flex;
         justify-content: center;
-    align-items: center;
-
-        cursor: pointer;   
+        align-items: center;
+        margin: 20px 0;
+        cursor: pointer;        
         width: 150px;
         height: 40px;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
         background-color: var(--gris-clair);
-        z-index: 3;           
+        z-index: 3;
+        font-size: 30px;
     }
     a:hover {
-        background-color:  var(--gris);
+        background-color: var(--gris);
     }
-   
 }
 
 .burger button:focus + .burgerLinks {
+    display: flex;
+    transform: translateY(-140px);
     opacity: 1;
-    transform: translateY(0);
+    // transform: translateY(0);
 }
-
 
 //    RESPONSIVE
 
 @media screen and (max-width: 1400px) {
-
     .containerTitle {
         margin-left: 2rem;
     }
@@ -148,7 +149,6 @@
             font-size: 1.5rem;
         }
     }
-    
 }
 @media screen and (max-width: 1200px) {
     .lien {
@@ -160,21 +160,20 @@
 }
 
 // @media screen and (max-width: 1200px) {
-    
+
 // }
 
 // @media screen and (max-width: 1024px) {
-    
+
 // }
 
 // @media screen and (max-width: 768px) {
-    
+
 // }
 
 // @media screen and (max-width: 480px) {
-    
-// }
 
+// }
 
 @media screen and (max-width: 1024px) {
     .burger {
@@ -197,11 +196,10 @@
     }
     .downTitle {
         h2 {
-            font-size: .75rem;
+            font-size: 0.75rem;
         }
     }
     .containerTitle {
         margin-left: 1rem;
     }
-
 }

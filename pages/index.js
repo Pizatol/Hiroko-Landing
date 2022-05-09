@@ -50,10 +50,10 @@ export default function Home() {
                     <h2 className={css.title1}>Konnichiwa !!</h2>
                     <h2 className={css.title2}>こんにちは !</h2>
                     <div>
-                        <h3>
+                        <h1>
                             Venez apprendre le japonais dans une ambiance
                             conviviale autour d&apos;un café !
-                        </h3>
+                        </h1>
                         <p>
                             Je vous propose d&apos;apprendre la langue japonaise
                             par petits groupes dans le cadre d&apos;une méthode

@@ -13,7 +13,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+
+    // padding: 0 50px;
     height: 700px;
 }
 
@@ -22,7 +25,9 @@
 .wallpaper {
     position: absolute;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
+    max-height: 1100px;
+    margin: auto;
     top: 0;
     z-index: -1;
     overflow: hidden;
@@ -55,7 +60,7 @@
         margin: 0;
         text-align: start;
     }
-    h3 {
+    h1 {
         font-family: var(--title);
         font-size: 1.5rem;
         margin: 30px 0;
@@ -88,6 +93,7 @@
     button {
         font-family: var(--title);
         font-size: 2rem;
+        transform: translateY(-50px);
         color: var(--black);
         padding: 15px 25px;
         border: none;
@@ -217,7 +223,7 @@
         h2 {
             font-size: 2rem;
         }
-        h3 {
+        h1 {
             font-size: 1rem;
             margin: 10px 10px;
         }
