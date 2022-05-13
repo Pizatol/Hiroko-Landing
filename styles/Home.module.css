@@ -3,7 +3,6 @@
   width: 100%;
   max-width: 2400px;
   margin: auto;
-  height: auto;
   background-color: transparent;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
@@ -12,6 +11,7 @@
 }
 
 .mainContainer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +36,48 @@
   z-index: -1;
   overflow: hidden;
   opacity: 0.35;
+}
+
+.rabbit_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+.rabbit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 652px;
+  stroke-dasharray: 4757;
+  stroke-dashoffset: 4757;
+  stroke-width: 3px;
+  stroke: var(--black);
+  -webkit-animation: draw 15s ease-in-out;
+          animation: draw 15s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .mainLeftPart {
@@ -209,9 +251,19 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .rabbit {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .mainLeftPart {
     margin-right: 20px;
+  }
+  .rabbit {
+    display: none;
   }
 }
 

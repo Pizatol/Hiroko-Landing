@@ -1,6 +1,8 @@
 .globalContainer {
-    position: absolute;
+    position: relative;
+
     width: 100%;
+    max-height: 200px;
     margin-top: 50px;
     display: flex;
     justify-content: space-around;

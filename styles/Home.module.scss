@@ -3,13 +3,14 @@
     width: 100%;
     max-width: 2400px;  
     margin: auto;
-    height: auto;   
+   
     background-color: transparent;
     animation-duration: 0.3s;
     animation-name: appear;
 }
 
 .mainContainer {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -32,6 +33,41 @@
     z-index: -1;
     overflow: hidden;
     opacity: 0.35;
+}
+
+// RABBIT 
+
+.rabbit_container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: auto;
+}
+
+
+.rabbit {
+    // width: 1723px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 652px;
+    stroke-dasharray: 4757;
+    stroke-dashoffset: 4757;
+    stroke-width: 3px;   
+    stroke: var(--black);
+    animation: draw 15s ease-in-out ;    
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+      }
 }
 
 // LEFT PART
@@ -161,11 +197,19 @@
         opacity: 1;
     }
 }
-
+@media screen and (max-width: 1200px) {
+    .rabbit {
+        width: 100%;        
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .mainLeftPart {
         margin-right: 20px;
+    }
+    .rabbit {
+        display: none;
     }
 }
 

@@ -65,7 +65,8 @@
 .lien {
   margin: 0 10px;
   color: var(--black);
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
   font-family: var(--standard);
   padding-right: 10px;
   border: 1px solid transparent;
@@ -126,8 +127,8 @@
   overflow: hidden;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .burgerLinks a {
@@ -141,13 +142,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 20px 0;
   cursor: pointer;
   width: 150px;
   height: 40px;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   background-color: var(--gris-clair);
   z-index: 3;
+  font-size: 30px;
 }
 
 .burgerLinks a:hover {
@@ -155,9 +158,12 @@
 }
 
 .burger button:focus + .burgerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-140px);
+          transform: translateY(-140px);
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 @media screen and (max-width: 1400px) {
@@ -201,7 +207,7 @@
     font-size: 1rem;
   }
   .downTitle h2 {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
   .containerTitle {
     margin-left: 1rem;
