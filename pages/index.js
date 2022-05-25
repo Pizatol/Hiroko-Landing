@@ -114,8 +114,10 @@ export default function Home() {
                     <button className={css.btnRdv}>Me contacter</button>
                 </Link>
             </div> */}
+           
 
             <Footer />
+         
         </div>
     );
 }
